@@ -51,27 +51,57 @@ void TestFunct(void)
 
 int main(void)
 {
+	uint32_t tmpTick;
+	
   TLE_Init();
 	
   /* System timer configuration */
   SysTick_Config(SystemFrequency / 1000);
 	
-  printf("Assembler Demo 1 %s %s %u\n", 
+  printf("Assembler Demo 2 %s %s %u\n", 
 	__DATE__, 
 	__TIME__,
 	SystemFrequency);
 	
-	printf("Part 1\n");
-	printf("Test 1 Result:%u\n", asm_get_8bit_number());
-	printf("Test 2 Result:%08X\t[%08X]\n", asm_get_xor(0x12345678, 0x34567890), 0x12345678^0x34567890);
-	printf("Test 3 Direct Jump:%08X\n", TestFunct);
-	printf("Jump 1, Before.%08X\n", __get_MSP());
-	asm_direct_jump_1(TestFunct);
-	printf("Jump 1, After.%08X\n\n", __get_MSP());
+	printf("ASM Test 4 :%u\n", asm_add2(34));
+	printf("ASM Test 5 :%u\n", asm_simple_add(123, 456));
+	printf("ASM Test 6 :%u\n", asm_pc_add());
 	
-	printf("Jump 2, Before.%08X\n", __get_MSP());
-	asm_direct_jump_2(TestFunct);
-	printf("Jump 2, After.%08X\n\n", __get_MSP());
+	printf("ASM Test 7 :%d\n", asm_sub20(34));
+	printf("ASM Test 8 :%d\n", asm_simple_sub(123, 456));
+	printf("ASM Test 9 :%d\n", asm_get_neg(1024));
+
+	printf("ASM Test 10 Result:%u\t[%u]\n", asm_simple_mul(123, 456), 123*456);
+
+	//Test Addition/Mulitiplication Cycles
+#define	TEST_ADD_MUL_NUM	50000
+	//If the muliplication takes similar cycles, it is a single cycle multiplication implementation
+	tmpTick = g_Ticks;
+	for(uint32_t i=0; i<TEST_ADD_MUL_NUM; ++i)
+	{
+		uint32_t tn = 101;
+		asm_simple_add(tn, 456);
+	}
+	tmpTick = g_Ticks-tmpTick;
+	printf("A:%u\n", tmpTick);	
+	
+	tmpTick = g_Ticks;
+	for(uint32_t i=0; i<TEST_ADD_MUL_NUM; ++i)
+	{		
+		uint32_t tn = 101;
+		asm_simple_mul(tn, 456);
+	}
+	tmpTick = g_Ticks-tmpTick;
+	printf("M:%u\n", tmpTick);	
+	
+	//Test Division
+	{
+		uint32_t ta = 10;
+		uint32_t tb = 2;
+		uint32_t tc = ta/tb;
+		printf("%u %u %u\n", ta, tb, tc);
+	}
+	
  	/* Channel 0 - VS */
 	/* Channel 1 - VDDEXT */
 	/* Channel 2 - VDDP */
@@ -92,5 +122,6 @@ int main(void)
   for (;;)
   {		
 		__WFI();
+		(void)WDT1_Service();			
   }
 }

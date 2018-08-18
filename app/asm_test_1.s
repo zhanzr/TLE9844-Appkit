@@ -47,7 +47,6 @@ asm_direct_jump_2   FUNCTION
 	EXPORT asm_direct_jump_2
 
 	bx r0
-	bx lr
 	
 	ENDP	
 		
