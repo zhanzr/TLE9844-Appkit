@@ -1,0 +1,1041 @@
+/*sha256=B413C07D5B4988082F6F83D16A9071D20B2BDF8A12546F2FED59B0BD6FEF4937*/
+/**
+ * @cond
+ ***********************************************************************************************************************
+ *
+ * Copyright (c) 2015, Infineon Technologies AG
+ * All rights reserved.
+ *
+ * Redistribution and use in source and binary forms, with or without modification,are permitted provided that the
+ * following conditions are met:
+ *
+ *   Redistributions of source code must retain the above copyright notice, this list of conditions and the  following
+ *   disclaimer.
+ *
+ *   Redistributions in binary form must reproduce the above copyright notice, this list of conditions and the
+ *   following disclaimer in the documentation and/or other materials provided with the distribution.
+ *
+ *   Neither the name of the copyright holders nor the names of its contributors may be used to endorse or promote
+ *   products derived from this software without specific prior written permission.
+ *
+ * THIS SOFTWARE IS PROVIDED BY THE COPYRIGHT HOLDERS AND CONTRIBUTORS "AS IS" AND ANY EXPRESS OR IMPLIED WARRANTIES,
+ * INCLUDING, BUT NOT LIMITED TO, THE IMPLIED WARRANTIES OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE ARE
+ * DISCLAIMED. IN NO EVENT SHALL THE COPYRIGHT HOLDER OR CONTRIBUTORS BE LIABLE  FOR ANY DIRECT, INDIRECT, INCIDENTAL,
+ * SPECIAL, EXEMPLARY, OR CONSEQUENTIAL DAMAGES (INCLUDING, BUT NOT LIMITED TO, PROCUREMENT OF SUBSTITUTE GOODS OR
+ * SERVICES; LOSS OF USE, DATA, OR PROFITS; OR BUSINESS INTERRUPTION) HOWEVER CAUSED AND ON ANY THEORY OF LIABILITY,
+ * WHETHER IN CONTRACT, STRICT LIABILITY,OR TORT (INCLUDING NEGLIGENCE OR OTHERWISE) ARISING IN ANY WAY OUT  OF THE
+ * USE OF THIS SOFTWARE, EVEN IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.
+ *
+ **********************************************************************************************************************/
+
+/*------------------------------------------------------------------------------
+IFXConfigWizard output file
+created on:Sat Aug 11 17:33:58 2018
+------------------------------------------------------------------------------*/
+
+#ifndef _CONFIG_H
+#define _CONFIG_H
+
+#define IFXConfigWizard_Version 1.8.7
+#define Config_File IFX_TLE984x.xml
+
+#define ADC1_CH0_CALLBACK place_your_function_call_back_here
+#define ADC1_CH0_INT_EN 0
+#define ADC1_CH0_LOTH_VOLT 6.4
+#define ADC1_CH0_LO_CALLBACK place_your_function_call_back_here
+#define ADC1_CH0_LO_INT_EN 0
+#define ADC1_CH0_UPTH_VOLT 24
+#define ADC1_CH0_UP_CALLBACK place_your_function_call_back_here
+#define ADC1_CH0_UP_INT_EN 0
+#define ADC1_CH10_CALLBACK place_your_function_call_back_here
+#define ADC1_CH10_INT_EN 0
+#define ADC1_CH10_LOTH_VOLT 2.5
+#define ADC1_CH10_LO_CALLBACK place_your_function_call_back_here
+#define ADC1_CH10_LO_INT_EN 0
+#define ADC1_CH10_UPTH_VOLT 2.5
+#define ADC1_CH10_UP_CALLBACK place_your_function_call_back_here
+#define ADC1_CH10_UP_INT_EN 0
+#define ADC1_CH11_CALLBACK place_your_function_call_back_here
+#define ADC1_CH11_INT_EN 0
+#define ADC1_CH11_LOTH_VOLT 2.5
+#define ADC1_CH11_LO_CALLBACK place_your_function_call_back_here
+#define ADC1_CH11_LO_INT_EN 0
+#define ADC1_CH11_UPTH_VOLT 2.5
+#define ADC1_CH11_UP_CALLBACK place_your_function_call_back_here
+#define ADC1_CH11_UP_INT_EN 0
+#define ADC1_CH12_CALLBACK place_your_function_call_back_here
+#define ADC1_CH12_INT_EN 0
+#define ADC1_CH1_CALLBACK place_your_function_call_back_here
+#define ADC1_CH1_INT_EN 0
+#define ADC1_CH1_LOTH_VOLT 6.4
+#define ADC1_CH1_LO_CALLBACK place_your_function_call_back_here
+#define ADC1_CH1_LO_INT_EN 0
+#define ADC1_CH1_UPTH_VOLT 24
+#define ADC1_CH1_UP_CALLBACK place_your_function_call_back_here
+#define ADC1_CH1_UP_INT_EN 0
+#define ADC1_CH2_CALLBACK place_your_function_call_back_here
+#define ADC1_CH2_INT_EN 0
+#define ADC1_CH2_LOTH_VOLT 5.4
+#define ADC1_CH2_LO_CALLBACK place_your_function_call_back_here
+#define ADC1_CH2_LO_INT_EN 0
+#define ADC1_CH2_UPTH_VOLT 8.1
+#define ADC1_CH2_UP_CALLBACK place_your_function_call_back_here
+#define ADC1_CH2_UP_INT_EN 0
+#define ADC1_CH3_CALLBACK place_your_function_call_back_here
+#define ADC1_CH3_INT_EN 0
+#define ADC1_CH3_LOTH_VOLT 5.4
+#define ADC1_CH3_LO_CALLBACK place_your_function_call_back_here
+#define ADC1_CH3_LO_INT_EN 0
+#define ADC1_CH3_UPTH_VOLT 8.1
+#define ADC1_CH3_UP_CALLBACK place_your_function_call_back_here
+#define ADC1_CH3_UP_INT_EN 0
+#define ADC1_CH4_CALLBACK place_your_function_call_back_here
+#define ADC1_CH4_INT_EN 0
+#define ADC1_CH4_LOTH_VOLT 5.4
+#define ADC1_CH4_LO_CALLBACK place_your_function_call_back_here
+#define ADC1_CH4_LO_INT_EN 0
+#define ADC1_CH4_UPTH_VOLT 8.1
+#define ADC1_CH4_UP_CALLBACK place_your_function_call_back_here
+#define ADC1_CH4_UP_INT_EN 0
+#define ADC1_CH5_CALLBACK place_your_function_call_back_here
+#define ADC1_CH5_INT_EN 0
+#define ADC1_CH5_LOTH_VOLT 5.4
+#define ADC1_CH5_LO_CALLBACK place_your_function_call_back_here
+#define ADC1_CH5_LO_INT_EN 0
+#define ADC1_CH5_UPTH_VOLT 8.1
+#define ADC1_CH5_UP_CALLBACK place_your_function_call_back_here
+#define ADC1_CH5_UP_INT_EN 0
+#define ADC1_CH6_CALLBACK place_your_function_call_back_here
+#define ADC1_CH6_INT_EN 0
+#define ADC1_CH6_LOTH_VOLT 5.4
+#define ADC1_CH6_LO_CALLBACK place_your_function_call_back_here
+#define ADC1_CH6_LO_INT_EN 0
+#define ADC1_CH6_UPTH_VOLT 8.1
+#define ADC1_CH6_UP_CALLBACK place_your_function_call_back_here
+#define ADC1_CH6_UP_INT_EN 0
+#define ADC1_CH7_CALLBACK place_your_function_call_back_here
+#define ADC1_CH7_INT_EN 0
+#define ADC1_CH7_LOTH_VOLT 2.5
+#define ADC1_CH7_LO_CALLBACK place_your_function_call_back_here
+#define ADC1_CH7_LO_INT_EN 0
+#define ADC1_CH7_UPTH_VOLT 2.5
+#define ADC1_CH7_UP_CALLBACK place_your_function_call_back_here
+#define ADC1_CH7_UP_INT_EN 0
+#define ADC1_CH8_CALLBACK place_your_function_call_back_here
+#define ADC1_CH8_INT_EN 0
+#define ADC1_CH8_LOTH_VOLT 2.5
+#define ADC1_CH8_LO_CALLBACK place_your_function_call_back_here
+#define ADC1_CH8_LO_INT_EN 0
+#define ADC1_CH8_UPTH_VOLT 2.5
+#define ADC1_CH8_UP_CALLBACK place_your_function_call_back_here
+#define ADC1_CH8_UP_INT_EN 0
+#define ADC1_CH9_CALLBACK place_your_function_call_back_here
+#define ADC1_CH9_INT_EN 0
+#define ADC1_CH9_LOTH_VOLT 2.5
+#define ADC1_CH9_LO_CALLBACK place_your_function_call_back_here
+#define ADC1_CH9_LO_INT_EN 0
+#define ADC1_CH9_UPTH_VOLT 2.5
+#define ADC1_CH9_UP_CALLBACK place_your_function_call_back_here
+#define ADC1_CH9_UP_INT_EN 0
+/*ADC1_CHX_EIM: (0<<11)|(0<<16)|0|(0<<8)*/
+#define ADC1_CHX_EIM (0x0u)
+/*ADC1_CHX_ESM: (0<<30)|(0<<16)|0|(0<<1)|(0<<2)|(0<<3)|(0<<4)|(0<<5)|(0<<6)|(0<\
+<7)|(0<<8)|(0<<9)|(0<<10)|(0<<11)*/
+#define ADC1_CHX_ESM (0x0u)
+#define ADC1_CLK 20
+/*ADC1_CTRL2: 0|(0<<1)|(0<<2)|(0<<3)|(0<<4)|(0<<5)|(0<<6)|(0<<7)|(0<<8)|(0<<9)|\
+(0<<10)|(0<<11)*/
+#define ADC1_CTRL2 (0x0u)
+/*ADC1_CTRL3: 1|(0<<16)|(4<<8)|(0<<1)*/
+#define ADC1_CTRL3 (0x401u)
+/*ADC1_CTRL5: 0|(0<<1)|(0<<2)|(0<<3)|(0<<4)|(0<<5)|(0<<6)|(0<<7)|(0<<8)|(0<<9)|\
+(0<<10)|(0<<11)*/
+#define ADC1_CTRL5 (0x0u)
+#define ADC1_DCH1_LOTH_VOLT 5.4
+#define ADC1_DCH1_LO_CALLBACK place_your_function_call_back_here
+#define ADC1_DCH1_LO_INT_EN 0
+#define ADC1_DCH1_UPTH_VOLT 8.1
+#define ADC1_DCH1_UP_CALLBACK place_your_function_call_back_here
+#define ADC1_DCH1_UP_INT_EN 0
+#define ADC1_DCH2_LOTH_VOLT 5.4
+#define ADC1_DCH2_LO_CALLBACK place_your_function_call_back_here
+#define ADC1_DCH2_LO_INT_EN 0
+#define ADC1_DCH2_UPTH_VOLT 8.1
+#define ADC1_DCH2_UP_CALLBACK place_your_function_call_back_here
+#define ADC1_DCH2_UP_INT_EN 0
+#define ADC1_DCH3_LOTH_VOLT 5.4
+#define ADC1_DCH3_LO_CALLBACK place_your_function_call_back_here
+#define ADC1_DCH3_LO_INT_EN 0
+#define ADC1_DCH3_UPTH_VOLT 8.1
+#define ADC1_DCH3_UP_CALLBACK place_your_function_call_back_here
+#define ADC1_DCH3_UP_INT_EN 0
+#define ADC1_DCH4_LOTH_VOLT 5.4
+#define ADC1_DCH4_LO_CALLBACK place_your_function_call_back_here
+#define ADC1_DCH4_LO_INT_EN 0
+#define ADC1_DCH4_UPTH_VOLT 8.1
+#define ADC1_DCH4_UP_CALLBACK place_your_function_call_back_here
+#define ADC1_DCH4_UP_INT_EN 0
+/*ADC1_DCHTH1_4_LOWER: 44|(44<<8)|(44<<16)|(44<<24)*/
+#define ADC1_DCHTH1_4_LOWER (0x2C2C2C2Cu)
+/*ADC1_DCHTH1_4_UPPER: 67|(67<<8)|(67<<16)|(67<<24)*/
+#define ADC1_DCHTH1_4_UPPER (0x43434343u)
+/*ADC1_DIFFCH_OUT1: (0<<16)*/
+#define ADC1_DIFFCH_OUT1 (0x0u)
+/*ADC1_DIFFCH_OUT2: (0<<16)*/
+#define ADC1_DIFFCH_OUT2 (0x0u)
+/*ADC1_DIFFCH_OUT3: (0<<16)*/
+#define ADC1_DIFFCH_OUT3 (0x0u)
+/*ADC1_DIFFCH_OUT4: (0<<16)*/
+#define ADC1_DIFFCH_OUT4 (0x0u)
+/*ADC1_DUIN_SEL: 0|(0<<8)|(0<<16)|(0<<24)*/
+#define ADC1_DUIN_SEL (0x0u)
+#define ADC1_EIM_CALLBACK place_your_function_call_back_here
+#define ADC1_EIM_INT_EN 0
+#define ADC1_ESM_CALLBACK place_your_function_call_back_here
+#define ADC1_ESM_INT_EN 0
+/*ADC1_FILTCOEFF0_11: 0|(0<<2)|(0<<4)|(0<<6)|(0<<8)|(0<<10)|(0<<12)|(0<<14)|(0<\
+<16)|(0<<18)|(0<<20)|(0<<22)*/
+#define ADC1_FILTCOEFF0_11 (0x0u)
+/*ADC1_FILT_LO_CTRL: 0|(0<<1)|(0<<2)|(0<<3)|(0<<4)|(0<<5)|(0<<6)|(0<<7)|(0<<8)|\
+(0<<9)|(0<<10)|(0<<11)*/
+#define ADC1_FILT_LO_CTRL (0x0u)
+/*ADC1_FILT_OUT0: (0<<16)*/
+#define ADC1_FILT_OUT0 (0x0u)
+/*ADC1_FILT_OUT1: (0<<16)*/
+#define ADC1_FILT_OUT1 (0x0u)
+/*ADC1_FILT_OUT10: (0<<16)*/
+#define ADC1_FILT_OUT10 (0x0u)
+/*ADC1_FILT_OUT11: (0<<16)*/
+#define ADC1_FILT_OUT11 (0x0u)
+/*ADC1_FILT_OUT2: (0<<16)*/
+#define ADC1_FILT_OUT2 (0x0u)
+/*ADC1_FILT_OUT3: (0<<16)*/
+#define ADC1_FILT_OUT3 (0x0u)
+/*ADC1_FILT_OUT4: (0<<16)*/
+#define ADC1_FILT_OUT4 (0x0u)
+/*ADC1_FILT_OUT5: (0<<16)*/
+#define ADC1_FILT_OUT5 (0x0u)
+/*ADC1_FILT_OUT6: (0<<16)*/
+#define ADC1_FILT_OUT6 (0x0u)
+/*ADC1_FILT_OUT7: (0<<16)*/
+#define ADC1_FILT_OUT7 (0x0u)
+/*ADC1_FILT_OUT8: (0<<16)*/
+#define ADC1_FILT_OUT8 (0x0u)
+/*ADC1_FILT_OUT9: (0<<16)*/
+#define ADC1_FILT_OUT9 (0x0u)
+/*ADC1_FILT_UP_CTRL: 0|(0<<1)|(0<<2)|(0<<3)|(0<<4)|(0<<5)|(0<<6)|(0<<7)|(0<<8)|\
+(0<<9)|(0<<10)|(0<<11)*/
+#define ADC1_FILT_UP_CTRL (0x0u)
+/*ADC1_IRQEN_1: (0<<25)|(0<<24)|(0<<27)|(0<<26)|(0<<29)|(0<<28)|(0<<31)|(0<<30)\
+|0|(0<<1)|(0<<2)|(0<<3)|(0<<4)|(0<<5)|(0<<6)|(0<<7)|(0<<8)|(0<<9)|(0<<10)|(0<<1\
+1)|(0<<12)|(0<<16)|(0<<17)*/
+#define ADC1_IRQEN_1 (0x0u)
+/*ADC1_IRQEN_2: (0<<17)|(0<<1)|(0<<18)|(0<<2)|(0<<19)|(0<<3)|(0<<20)|(0<<4)|(0<\
+<21)|(0<<5)|(0<<22)|(0<<6)|(0<<23)|(0<<7)|(0<<24)|(0<<8)|(0<<25)|(0<<9)|(0<<26)\
+|(0<<10)|(0<<27)|(0<<11)*/
+#define ADC1_IRQEN_2 (0x0u)
+#define ADC1_MODE_SELECT 1
+#define ADC1_MSG1 13
+#define ADC1_MSG2 6
+/*ADC1_SQ0_1: 0|(0<<1)|(0<<2)|(0<<3)|(0<<4)|(0<<5)|(0<<6)|(0<<7)|(0<<8)|(0<<9)|\
+(0<<10)|(0<<11)|(0<<16)|(0<<17)|(0<<18)|(0<<19)|(0<<20)|(0<<21)|(0<<22)|(0<<23)\
+|(0<<24)|(0<<25)|(0<<26)|(0<<27)*/
+#define ADC1_SQ0_1 (0x0u)
+/*ADC1_SQ10_11: 0|(0<<1)|(0<<2)|(0<<3)|(0<<4)|(0<<5)|(0<<6)|(0<<7)|(0<<8)|(0<<9\
+)|(0<<10)|(0<<11)|(0<<16)|(0<<17)|(0<<18)|(0<<19)|(0<<20)|(0<<21)|(0<<22)|(0<<2\
+3)|(0<<24)|(0<<25)|(0<<26)|(0<<27)*/
+#define ADC1_SQ10_11 (0x0u)
+/*ADC1_SQ2_3: 0|(0<<1)|(0<<2)|(0<<3)|(0<<4)|(0<<5)|(0<<6)|(0<<7)|(0<<8)|(0<<9)|\
+(0<<10)|(0<<11)|(0<<16)|(0<<17)|(0<<18)|(0<<19)|(0<<20)|(0<<21)|(0<<22)|(0<<23)\
+|(0<<24)|(0<<25)|(0<<26)|(0<<27)*/
+#define ADC1_SQ2_3 (0x0u)
+/*ADC1_SQ4_5: 0|(0<<1)|(0<<2)|(0<<3)|(0<<4)|(0<<5)|(0<<6)|(0<<7)|(0<<8)|(0<<9)|\
+(0<<10)|(0<<11)|(0<<16)|(0<<17)|(0<<18)|(0<<19)|(0<<20)|(0<<21)|(0<<22)|(0<<23)\
+|(0<<24)|(0<<25)|(0<<26)|(0<<27)*/
+#define ADC1_SQ4_5 (0x0u)
+/*ADC1_SQ6_7: 0|(0<<1)|(0<<2)|(0<<3)|(0<<4)|(0<<5)|(0<<6)|(0<<7)|(0<<8)|(0<<9)|\
+(0<<10)|(0<<11)|(0<<16)|(0<<17)|(0<<18)|(0<<19)|(0<<20)|(0<<21)|(0<<22)|(0<<23)\
+|(0<<24)|(0<<25)|(0<<26)|(0<<27)*/
+#define ADC1_SQ6_7 (0x0u)
+/*ADC1_SQ8_9: 0|(0<<1)|(0<<2)|(0<<3)|(0<<4)|(0<<5)|(0<<6)|(0<<7)|(0<<8)|(0<<9)|\
+(0<<10)|(0<<11)|(0<<16)|(0<<17)|(0<<18)|(0<<19)|(0<<20)|(0<<21)|(0<<22)|(0<<23)\
+|(0<<24)|(0<<25)|(0<<26)|(0<<27)*/
+#define ADC1_SQ8_9 (0x0u)
+/*ADC1_TH0_3_LOWER: 63|(63<<8)|(44<<16)|(44<<24)*/
+#define ADC1_TH0_3_LOWER (0x2C2C3F3Fu)
+/*ADC1_TH0_3_UPPER: 239|(239<<8)|(67<<16)|(67<<24)*/
+#define ADC1_TH0_3_UPPER (0x4343EFEFu)
+/*ADC1_TH4_7_LOWER: 44|(44<<8)|(44<<16)|(115<<24)*/
+#define ADC1_TH4_7_LOWER (0x732C2C2Cu)
+/*ADC1_TH4_7_UPPER: 67|(67<<8)|(67<<16)|(115<<24)*/
+#define ADC1_TH4_7_UPPER (0x73434343u)
+/*ADC1_TH8_11_LOWER: 115|(115<<8)|(115<<16)|(115<<24)*/
+#define ADC1_TH8_11_LOWER (0x73737373u)
+/*ADC1_TH8_11_UPPER: 115|(115<<8)|(115<<16)|(115<<24)*/
+#define ADC1_TH8_11_UPPER (0x73737373u)
+#define ADC2_CH0_LOTH_VOLT 4.6
+#define ADC2_CH0_UPTH_VOLT 28.2
+#define ADC2_CH1_LOTH_VOLT 4.51
+#define ADC2_CH1_UPTH_VOLT 5.5
+#define ADC2_CH2_LOTH_VOLT 2.64
+#define ADC2_CH2_UPTH_VOLT 5.5
+#define ADC2_CH3_LOTH_VOLT 1.001
+#define ADC2_CH3_UPTH_VOLT 1.5
+#define ADC2_CH4_LOTH_VOLT 1.355
+#define ADC2_CH4_UPTH_VOLT 1.6
+#define ADC2_CH5_LOTH_DEG 152
+#define ADC2_CH5_UPTH_DEG 182
+#define ADC2_CH6_LOTH_DEG 128
+#define ADC2_CH6_UPTH_DEG 182
+#define ADC2_CLK 20
+/*ADC2_CTRL2: 1|(4<<8)*/
+#define ADC2_CTRL2 (0x401u)
+/*ADC2_CTRL4: 1|(1<<1)|(1<<2)|(1<<3)|(1<<4)|(1<<5)|(1<<6)*/
+#define ADC2_CTRL4 (0x7Fu)
+/*ADC2_FILT_LO_CTRL: 1|(1<<1)|(1<<2)|(1<<3)|(1<<4)|(1<<5)|(1<<6)*/
+#define ADC2_FILT_LO_CTRL (0x7Fu)
+/*ADC2_FILT_UP_CTRL: 1|(1<<1)|(1<<2)|(1<<3)|(1<<4)|(1<<5)|(1<<6)*/
+#define ADC2_FILT_UP_CTRL (0x7Fu)
+#define ADC2_SYS_TEMP_LO_CALLBACK place_your_function_call_back_here
+#define ADC2_SYS_TEMP_LO_INT_EN 0
+#define ADC2_SYS_TEMP_UP_CALLBACK place_your_function_call_back_here
+#define ADC2_SYS_TEMP_UP_INT_EN 0
+/*ADC2_TH0_3_LOWER: 37|(191<<8)|(111<<16)|(157<<24)*/
+#define ADC2_TH0_3_LOWER (0x9D6FBF25u)
+/*ADC2_TH0_3_UPPER: 228|(233<<8)|(233<<16)|(235<<24)*/
+#define ADC2_TH0_3_UPPER (0xEBE9E9E4u)
+/*ADC2_TH4_7_LOWER: 212|(212<<8)|(200<<16)*/
+#define ADC2_TH4_7_LOWER (0xC8D4D4u)
+/*ADC2_TH4_7_UPPER: 251|(226<<8)|(226<<16)*/
+#define ADC2_TH4_7_UPPER (0xE2E2FBu)
+#define ADC2_VBG_LO_CALLBACK place_your_function_call_back_here
+#define ADC2_VBG_LO_INT_EN 0
+#define ADC2_VBG_UP_CALLBACK place_your_function_call_back_here
+#define ADC2_VBG_UP_INT_EN 0
+#define ADC2_VDDC_LO_CALLBACK place_your_function_call_back_here
+#define ADC2_VDDC_LO_INT_EN 0
+#define ADC2_VDDC_UP_CALLBACK place_your_function_call_back_here
+#define ADC2_VDDC_UP_INT_EN 0
+#define ADC2_VDDEXT_LO_CALLBACK place_your_function_call_back_here
+#define ADC2_VDDEXT_LO_INT_EN 0
+#define ADC2_VDDEXT_UP_CALLBACK place_your_function_call_back_here
+#define ADC2_VDDEXT_UP_INT_EN 0
+#define ADC2_VDDP_LO_CALLBACK place_your_function_call_back_here
+#define ADC2_VDDP_LO_INT_EN 0
+#define ADC2_VDDP_UP_CALLBACK place_your_function_call_back_here
+#define ADC2_VDDP_UP_INT_EN 0
+#define ADC2_VS_LO_CALLBACK place_your_function_call_back_here
+#define ADC2_VS_LO_INT_EN 0
+#define ADC2_VS_UP_CALLBACK place_your_function_call_back_here
+#define ADC2_VS_UP_INT_EN 0
+#define CCU6_CC60SR 0
+#define CCU6_CC61SR 0
+#define CCU6_CC62SR 0
+#define CCU6_CC63SR 0
+#define CCU6_CH0_CMP_DC 0
+#define CCU6_CH0_CMP_SEL 0
+#define CCU6_CH0_CMP_TICK 0
+#define CCU6_CH0_CMP_TIME 0
+#define CCU6_CH0_CM_F_CALLBACK place_your_function_call_back_here
+#define CCU6_CH0_CM_F_INT_EN 0
+#define CCU6_CH0_CM_R_CALLBACK place_your_function_call_back_here
+#define CCU6_CH0_CM_R_INT_EN 0
+#define CCU6_CH1_CMP_DC 0
+#define CCU6_CH1_CMP_SEL 0
+#define CCU6_CH1_CMP_TICK 0
+#define CCU6_CH1_CMP_TIME 0
+#define CCU6_CH1_CM_F_CALLBACK place_your_function_call_back_here
+#define CCU6_CH1_CM_F_INT_EN 0
+#define CCU6_CH1_CM_R_CALLBACK place_your_function_call_back_here
+#define CCU6_CH1_CM_R_INT_EN 0
+#define CCU6_CH2_CMP_DC 0
+#define CCU6_CH2_CMP_SEL 0
+#define CCU6_CH2_CMP_TICK 0
+#define CCU6_CH2_CMP_TIME 0
+#define CCU6_CH2_CM_F_CALLBACK place_your_function_call_back_here
+#define CCU6_CH2_CM_F_INT_EN 0
+#define CCU6_CH2_CM_R_CALLBACK place_your_function_call_back_here
+#define CCU6_CH2_CM_R_INT_EN 0
+#define CCU6_CH3_CMP_DC 0
+#define CCU6_CH3_CMP_SEL 0
+#define CCU6_CH3_CMP_TICK 0
+#define CCU6_CH3_CMP_TIME 0
+#define CCU6_CHE_INT_EN 0
+/*CCU6_CMPSTAT: (0<<8)|(0<<9)|(0<<10)|(0<<11)|(0<<12)|(0<<13)|(0<<14)|(0<<15)*/
+#define CCU6_CMPSTAT (0x0u)
+#define CCU6_CORRECT_HALL_CALLBACK place_your_function_call_back_here
+#define CCU6_DEADTIME 0
+/*CCU6_IEN: (0<<14)|0|(0<<1)|(0<<2)|(0<<3)|(0<<4)|(0<<5)|(0<<6)|(0<<7)|(0<<8)|(\
+0<<9)|(0<<10)|(0<<12)|(0<<13)|(0<<15)*/
+#define CCU6_IEN (0x0u)
+/*CCU6_INP: 0|(0<<2)|(0<<4)|(1<<6)|(1<<8)|(2<<10)|(3<<12)*/
+#define CCU6_INP (0x3940u)
+/*CCU6_MCMCTR: 0|(0<<4)|(0<<8)|(0<<9)|(0<<10)*/
+#define CCU6_MCMCTR (0x0u)
+#define CCU6_MCM_STR_CALLBACK place_your_function_call_back_here
+#define CCU6_MCM_STR_INT_EN 0
+/*CCU6_MODCTR: 0|(0<<1)|(0<<8)|(0<<9)|(0<<2)|(0<<3)|(0<<10)|(0<<11)|(0<<4)|(0<<\
+5)|(0<<12)|(0<<13)|(0<<15)|(0<<7)*/
+#define CCU6_MODCTR (0x0u)
+/*CCU6_NVIC: 0|(0<<1)|(0<<2)|(0<<3)*/
+#define CCU6_NVIC (0x0u)
+/*CCU6_PISEL0: 1|(1<<2)|(1<<4)|(2<<6)|(3<<8)|(3<<10)|(3<<12)|(2<<14)*/
+#define CCU6_PISEL0 (0xBF95u)
+/*CCU6_PISEL2: 2|(0<<2)|(0<<4)*/
+#define CCU6_PISEL2 (0x2u)
+/*CCU6_PSLR: 0|(0<<1)|(0<<2)|(0<<3)|(0<<4)|(0<<5)|(0<<7)*/
+#define CCU6_PSLR (0x0u)
+/*CCU6_T12DTC: 0|(0<<8)|(0<<9)|(0<<10)*/
+#define CCU6_T12DTC (0x0u)
+/*CCU6_T12MSEL: 0|(0<<4)|(0<<8)|(0<<12)|(0<<15)*/
+#define CCU6_T12MSEL (0x0u)
+/*CCU6_T12PR: 2000*/
+#define CCU6_T12PR (0x7D0u)
+#define CCU6_T12_CLK 40
+#define CCU6_T12_FREQ 20000
+#define CCU6_T12_MAX_PERIOD 1638.38
+#define CCU6_T12_OM_CALLBACK place_your_function_call_back_here
+#define CCU6_T12_OM_INT_EN 0
+#define CCU6_T12_PERIOD_SEL 1
+#define CCU6_T12_PM_CALLBACK place_your_function_call_back_here
+#define CCU6_T12_PM_INT_EN 0
+/*CCU6_T12_TICK: 1*/
+#define CCU6_T12_TICK (0x1u)
+#define CCU6_T12_TIME 50
+/*CCU6_T13PR: 40*/
+#define CCU6_T13PR (0x28u)
+#define CCU6_T13_CLK 40
+#define CCU6_T13_CM_CALLBACK place_your_function_call_back_here
+#define CCU6_T13_CM_INT_EN 0
+#define CCU6_T13_FREQ 20000
+#define CCU6_T13_MAX_PERIOD 1638.38
+#define CCU6_T13_PERIOD_SEL 1
+#define CCU6_T13_PM_CALLBACK place_your_function_call_back_here
+#define CCU6_T13_PM_INT_EN 0
+/*CCU6_T13_TICK: 1*/
+#define CCU6_T13_TICK (0x1u)
+#define CCU6_T13_TIME 1
+/*CCU6_TCTR0: 0|(0<<3)|(0<<7)|(0<<8)|(0<<11)*/
+#define CCU6_TCTR0 (0x0u)
+/*CCU6_TCTR2: 0|(0<<8)|(0<<1)|(0<<2)|(0<<5)|(0<<10)*/
+#define CCU6_TCTR2 (0x0u)
+#define CCU6_TEMP_CC60_OUT 0
+#define CCU6_TEMP_CC61_OUT 0
+#define CCU6_TEMP_CC62_OUT 0
+#define CCU6_TEMP_COUT60_OUT 0
+#define CCU6_TEMP_COUT61_OUT 0
+#define CCU6_TEMP_COUT62_OUT 0
+#define CCU6_TEMP_COUT63_OUT 0
+#define CCU6_TRAP_CALLBACK place_your_function_call_back_here
+#define CCU6_TRAP_INT_EN 0
+/*CCU6_TRPCTR: 0|(0<<2)|(0<<8)|(0<<9)|(0<<10)|(0<<11)|(0<<12)|(0<<13)|(0<<14)|(\
+0<<15)*/
+#define CCU6_TRPCTR (0x0u)
+#define CCU6_WHE_INT_EN 0
+#define CCU6_WRONG_HALL_CALLBACK place_your_function_call_back_here
+#define CPU_HARDFAULT_CALLBACK place_your_function_call_back_here
+#define CPU_HARDFAULT_EN 0
+/*CPU_NVIC_IPR0: (0<<6)|(0<<14)|(0<<22)|(0<<30)*/
+#define CPU_NVIC_IPR0 (0x0u)
+/*CPU_NVIC_IPR1: (0<<6)|(0<<14)|(0<<22)|(0<<30)*/
+#define CPU_NVIC_IPR1 (0x0u)
+/*CPU_NVIC_IPR2: (0<<6)|(0<<14)|(0<<22)|(0<<30)*/
+#define CPU_NVIC_IPR2 (0x0u)
+/*CPU_NVIC_IPR3: (0<<6)|(0<<14)|(0<<22)*/
+#define CPU_NVIC_IPR3 (0x0u)
+/*CPU_NVIC_IPR4: (0<<14)|(0<<22)|(0<<30)*/
+#define CPU_NVIC_IPR4 (0x0u)
+/*CPU_NVIC_IPR5: (0<<6)|(0<<14)|(0<<22)|(0<<30)*/
+#define CPU_NVIC_IPR5 (0x0u)
+/*CPU_NVIC_ISER: 0|(0<<1)|(0<<2)|(0<<3)|(0<<4)|(0<<5)|(0<<6)|(0<<7)|(0<<8)|(0<<\
+9)|(0<<10)|(0<<11)|(0<<12)|(0<<13)|(0<<14)|(0<<17)|(0<<18)|(0<<19)|(0<<20)|(0<<\
+21)|(0<<22)|(0<<23)*/
+#define CPU_NVIC_ISER (0x0u)
+#define CPU_SYSTICK_CALLBACK User_SysTick_Handler
+#define CPU_SYSTICK_EN 1
+#define DEVICE 9844
+#define EXINT0_FALLING_CALLBACK place_your_function_call_back_here
+#define EXINT0_RISING_CALLBACK place_your_function_call_back_here
+#define EXINT1_FALLING_CALLBACK place_your_function_call_back_here
+#define EXINT1_RISING_CALLBACK place_your_function_call_back_here
+#define EXINT2_FALLING_CALLBACK place_your_function_call_back_here
+#define EXINT2_RISING_CALLBACK place_your_function_call_back_here
+/*GPT12E_CAPREL: 65535*/
+#define GPT12E_CAPREL (0xFFFFu)
+#define GPT12E_CAPREL_INT_EN 0
+/*GPT12E_CAPREL_TICK: 1*/
+#define GPT12E_CAPREL_TICK (0x1u)
+#define GPT12E_CAPREL_TIME 0
+/*GPT12E_PISEL: (1<<1)|0|(1<<4)|(3<<2)|(0<<8)|(1<<6)|(1<<11)|(1<<10)|(2<<14)|(0\
+<<13)|(0<<12)*/
+#define GPT12E_PISEL (0x8C5Eu)
+/*GPT12E_T2: 65535*/
+#define GPT12E_T2 (0xFFFFu)
+/*GPT12E_T2CON: 0|(0<<9)|(0<<7)|(0<<3)|(0<<8)*/
+#define GPT12E_T2CON (0x0u)
+#define GPT12E_T2CON_T2I_CAPTURE 0
+#define GPT12E_T2CON_T2I_COUNTER 0
+#define GPT12E_T2CON_T2I_GATED_TIMER_HIGH 0
+#define GPT12E_T2CON_T2I_GATED_TIMER_LOW 0
+#define GPT12E_T2CON_T2I_INC_EDGE 0
+#define GPT12E_T2CON_T2I_INC_ROT 0
+#define GPT12E_T2CON_T2I_RELOAD 0
+#define GPT12E_T2CON_T2I_TIMER 0
+#define GPT12E_T2_INT_EN 0
+/*GPT12E_T2_TICK: 1*/
+#define GPT12E_T2_TICK (0x1u)
+#define GPT12E_T2_TIME 0
+/*GPT12E_T3: 65535*/
+#define GPT12E_T3 (0xFFFFu)
+/*GPT12E_T3CON: (1<<11)|0|(0<<7)|(0<<10)|(0<<9)|(0<<3)|(0<<8)*/
+#define GPT12E_T3CON (0x800u)
+#define GPT12E_T3CON_T3I_COUNTER 0
+#define GPT12E_T3CON_T3I_GATED_TIMER_HIGH 0
+#define GPT12E_T3CON_T3I_GATED_TIMER_LOW 0
+#define GPT12E_T3CON_T3I_INC_EDGE 0
+#define GPT12E_T3CON_T3I_INC_ROT 0
+#define GPT12E_T3CON_T3I_TIMER 0
+#define GPT12E_T3_INT_EN 0
+/*GPT12E_T3_TICK: 1*/
+#define GPT12E_T3_TICK (0x1u)
+#define GPT12E_T3_TIME 0
+/*GPT12E_T4: 65535*/
+#define GPT12E_T4 (0xFFFFu)
+/*GPT12E_T4CON: 0|(0<<9)|(0<<10)|(0<<11)|(0<<7)|(0<<3)|(0<<8)*/
+#define GPT12E_T4CON (0x0u)
+#define GPT12E_T4CON_T4I_CAPTURE 0
+#define GPT12E_T4CON_T4I_COUNTER 0
+#define GPT12E_T4CON_T4I_GATED_TIMER_HIGH 0
+#define GPT12E_T4CON_T4I_GATED_TIMER_LOW 0
+#define GPT12E_T4CON_T4I_INC_EDGE 0
+#define GPT12E_T4CON_T4I_INC_ROT 0
+#define GPT12E_T4CON_T4I_RELOAD 0
+#define GPT12E_T4CON_T4I_TIMER 0
+#define GPT12E_T4_INT_EN 0
+/*GPT12E_T4_TICK: 1*/
+#define GPT12E_T4_TICK (0x1u)
+#define GPT12E_T4_TIME 0
+/*GPT12E_T5: 65535*/
+#define GPT12E_T5 (0xFFFFu)
+/*GPT12E_T5CON: 0|(0<<15)|(0<<10)|(0<<14)|(0<<9)|(0<<7)|(0<<3)|(0<<8)*/
+#define GPT12E_T5CON (0x0u)
+#define GPT12E_T5CON_T5I_COUNTER 0
+#define GPT12E_T5CON_T5I_GATED_TIMER_HIGH 0
+#define GPT12E_T5CON_T5I_GATED_TIMER_LOW 0
+#define GPT12E_T5CON_T5I_TIMER 0
+#define GPT12E_T5_INT_EN 0
+/*GPT12E_T5_TICK: 1*/
+#define GPT12E_T5_TICK (0x1u)
+#define GPT12E_T5_TIME 0
+/*GPT12E_T6: 65535*/
+#define GPT12E_T6 (0xFFFFu)
+/*GPT12E_T6CON: (1<<11)|0|(0<<14)|(0<<15)|(0<<7)|(0<<10)|(0<<9)|(0<<3)|(0<<8)*/
+#define GPT12E_T6CON (0x800u)
+#define GPT12E_T6CON_T6I_COUNTER 0
+#define GPT12E_T6CON_T6I_GATED_TIMER_HIGH 0
+#define GPT12E_T6CON_T6I_GATED_TIMER_LOW 0
+#define GPT12E_T6CON_T6I_TIMER 0
+#define GPT12E_T6_INT_EN 0
+/*GPT12E_T6_TICK: 1*/
+#define GPT12E_T6_TICK (0x1u)
+#define GPT12E_T6_TIME 0
+#define GPT12E_TEMP_CAPREL_SEL 0
+#define GPT12E_TEMP_T2_PISEL 0
+#define GPT12E_TEMP_T2_SEL 0
+#define GPT12E_TEMP_T3OUT 0
+#define GPT12E_TEMP_T3_PISEL 0
+#define GPT12E_TEMP_T3_SEL 0
+#define GPT12E_TEMP_T4_PISEL 0
+#define GPT12E_TEMP_T4_SEL 0
+#define GPT12E_TEMP_T5_PISEL 0
+#define GPT12E_TEMP_T5_SEL 0
+#define GPT12E_TEMP_T6OUT 0
+#define GPT12E_TEMP_T6_PISEL 0
+#define GPT12E_TEMP_T6_SEL 0
+#define GPT1_BASE_CLK 10
+#define GPT1_T2_CALLBACK place_your_function_call_back_here
+#define GPT1_T2_CLK 10
+#define GPT1_T3_CALLBACK place_your_function_call_back_here
+#define GPT1_T3_CLK 10
+#define GPT1_T4_CALLBACK place_your_function_call_back_here
+#define GPT1_T4_CLK 10
+#define GPT2_BASE_CLK 20
+#define GPT2_CAPREL_CALLBACK place_your_function_call_back_here
+#define GPT2_T5_CALLBACK place_your_function_call_back_here
+#define GPT2_T5_CLK 20
+#define GPT2_T6_CALLBACK place_your_function_call_back_here
+#define GPT2_T6_CLK 20
+#define HS1_OC_CALLBACK place_your_function_call_back_here
+#define HS1_OC_INT_EN 0
+#define HS1_OL_CALLBACK place_your_function_call_back_here
+#define HS1_OL_INT_EN 0
+#define HS1_OT_CALLBACK place_your_function_call_back_here
+#define HS1_OT_INT_EN 0
+#define HS2_OC_CALLBACK place_your_function_call_back_here
+#define HS2_OC_INT_EN 0
+#define HS2_OL_CALLBACK place_your_function_call_back_here
+#define HS2_OL_INT_EN 0
+#define HS2_OT_CALLBACK place_your_function_call_back_here
+#define HS2_OT_INT_EN 0
+/*HS_CTRL: 0|(0<<12)|(0<<8)|(0<<7)|(0<<3)|(0<<2)|(0<<1)|(0<<16)|(0<<28)|(0<<24)\
+|(0<<23)|(0<<19)|(0<<18)|(0<<17)*/
+#define HS_CTRL (0x0u)
+/*HS_HS1_TRIM: (3<<8)|3*/
+#define HS_HS1_TRIM (0x303u)
+/*HS_HS2_TRIM: (3<<8)|3*/
+#define HS_HS2_TRIM (0x303u)
+/*HS_IRQEN: (0<<7)|(0<<6)|(0<<5)|(0<<23)|(0<<22)|(0<<21)*/
+#define HS_IRQEN (0x0u)
+/*HS_PWMSRCSEL: (0<<3)|0*/
+#define HS_PWMSRCSEL (0x0u)
+#define LIN_AUTOBAUD_EN 0
+/*LIN_CTRL: (3<<1)|(0<<11)|(0<<21)*/
+#define LIN_CTRL (0x6u)
+#define LIN_Configuration_En 0
+#define LIN_EOF_CALLBACK place_your_function_call_back_here
+#define LIN_EOF_INT_EN 0
+#define LIN_ERR_CALLBACK place_your_function_call_back_here
+#define LIN_ERR_INT_EN 0
+/*LIN_IRQEN: (0<<3)|(0<<5)|(0<<4)|(0<<6)*/
+#define LIN_IRQEN (0x0u)
+#define LIN_MASTER_BAUDRATE 19200
+#define LIN_OC_CALLBACK place_your_function_call_back_here
+#define LIN_OC_INT_EN 0
+#define LIN_OT_CALLBACK place_your_function_call_back_here
+#define LIN_OT_INT_EN 0
+#define LIN_SMERR_CALLBACK place_your_function_call_back_here
+#define LIN_SMERR_INT_EN 0
+/*LIN_SYNC: 0|(0<<1)*/
+#define LIN_SYNC (0x0u)
+#define LIN_TMOUT_CALLBACK place_your_function_call_back_here
+#define LIN_TMOUT_INT_EN 0
+#define LS1_OC_CALLBACK place_your_function_call_back_here
+#define LS1_OC_INT_EN 0
+#define LS1_OL_CALLBACK place_your_function_call_back_here
+#define LS1_OL_INT_EN 0
+#define LS1_OT_CALLBACK place_your_function_call_back_here
+#define LS1_OT_INT_EN 0
+#define LS2_OC_CALLBACK place_your_function_call_back_here
+#define LS2_OC_INT_EN 0
+#define LS2_OL_CALLBACK place_your_function_call_back_here
+#define LS2_OL_INT_EN 0
+#define LS2_OT_CALLBACK place_your_function_call_back_here
+#define LS2_OT_INT_EN 0
+/*LS_CTRL: 1|(0<<8)|(0<<3)|(0<<2)|(0<<1)|(1<<16)|(0<<24)|(0<<19)|(0<<18)|(0<<17\
+)*/
+#define LS_CTRL (0x10001u)
+/*LS_IRQEN: (0<<7)|(0<<6)|(0<<5)|(0<<23)|(0<<22)|(0<<21)*/
+#define LS_IRQEN (0x0u)
+/*LS_LS1_TRIM: (3<<8)|3*/
+#define LS_LS1_TRIM (0x303u)
+/*LS_LS2_TRIM: (3<<8)|3*/
+#define LS_LS2_TRIM (0x303u)
+/*LS_PWMSRCSEL: (0<<3)|0*/
+#define LS_PWMSRCSEL (0x0u)
+#define MON1_FALLING_CALLBACK place_your_function_call_back_here
+#define MON1_FALLING_INT_EN 0
+#define MON1_RISING_CALLBACK place_your_function_call_back_here
+#define MON1_RISING_INT_EN 0
+#define MON2_FALLING_CALLBACK place_your_function_call_back_here
+#define MON2_FALLING_INT_EN 0
+#define MON2_RISING_CALLBACK place_your_function_call_back_here
+#define MON2_RISING_INT_EN 0
+#define MON3_FALLING_CALLBACK place_your_function_call_back_here
+#define MON3_FALLING_INT_EN 0
+#define MON3_RISING_CALLBACK place_your_function_call_back_here
+#define MON3_RISING_INT_EN 0
+#define MON4_FALLING_CALLBACK place_your_function_call_back_here
+#define MON4_FALLING_INT_EN 0
+#define MON4_RISING_CALLBACK place_your_function_call_back_here
+#define MON4_RISING_INT_EN 0
+#define MON5_FALLING_CALLBACK place_your_function_call_back_here
+#define MON5_FALLING_INT_EN 0
+#define MON5_RISING_CALLBACK place_your_function_call_back_here
+#define MON5_RISING_INT_EN 0
+/*MON_CNF14: 1|(1<<2)|(1<<1)|(0<<5)|(0<<4)|(0<<3)|(1<<8)|(1<<10)|(1<<9)|(0<<13)\
+|(0<<12)|(0<<11)|(1<<16)|(1<<18)|(1<<17)|(0<<21)|(0<<20)|(0<<19)|(1<<24)|(1<<26\
+)|(1<<25)|(0<<29)|(0<<28)|(0<<27)*/
+#define MON_CNF14 (0x7070707u)
+/*MON_CNF5: 0|(1<<2)|(1<<1)|(0<<5)|(0<<4)|(0<<3)*/
+#define MON_CNF5 (0x6u)
+#define NAC_NAD_EN 1
+/*NAD_NAC: (1<<8)|(6<<16)|(128<<24)*/
+#define NAD_NAC (0x80060100u)
+/*PMU_CNF_RST_TFB: 3*/
+#define PMU_CNF_RST_TFB (0x3u)
+/*PMU_CNF_WAKE_FILTER: 0|(0<<1)|(2<<2)*/
+#define PMU_CNF_WAKE_FILTER (0x8u)
+#define PMU_CYC_SENSE_ACT_TIME 10
+#define PMU_CYC_SENSE_EFF_SLP_TIME 2
+#define PMU_CYC_SENSE_SLP_TIME 2
+#define PMU_CYC_WAKE_EFF_TIME 2
+#define PMU_CYC_WAKE_TIME 2
+#define PMU_GPIO_WAKEUP_INT_EN 0
+/*PMU_LIN_WAKE_EN: (0<<7)*/
+#define PMU_LIN_WAKE_EN (0x0u)
+#define PMU_MON1_CYCLE_SENSE 0
+#define PMU_MON1_WAKE 1
+#define PMU_MON1_WAKE_FALL 1
+#define PMU_MON1_WAKE_RISE 1
+#define PMU_MON2_CYCLE_SENSE 0
+#define PMU_MON2_WAKE 1
+#define PMU_MON2_WAKE_FALL 1
+#define PMU_MON2_WAKE_RISE 1
+#define PMU_MON3_CYCLE_SENSE 0
+#define PMU_MON3_WAKE 1
+#define PMU_MON3_WAKE_FALL 1
+#define PMU_MON3_WAKE_RISE 1
+#define PMU_MON4_CYCLE_SENSE 0
+#define PMU_MON4_WAKE 1
+#define PMU_MON4_WAKE_FALL 1
+#define PMU_MON4_WAKE_RISE 1
+#define PMU_MON5_CYCLE_SENSE 0
+#define PMU_MON5_WAKE 0
+#define PMU_MON5_WAKE_FALL 1
+#define PMU_MON5_WAKE_RISE 1
+#define PMU_PORT0_WAKE 0
+#define PMU_PORT1_WAKE 0
+#define PMU_SENSE_EFF_SLP_TIME 10
+/*PMU_SLEEP: (0<<2)|(0<<20)|(0<<16)|(0<<3)|(0<<12)|(0<<8)|(0<<24)|(1<<1)|0*/
+#define PMU_SLEEP (0x2u)
+#define PMU_SLEEP_MODE 0
+#define PMU_STOP_MODE 0
+/*PMU_SUPPLY_STS: (0<<2)|(0<<6)*/
+#define PMU_SUPPLY_STS (0x0u)
+#define PMU_VDDC_OL_CALLBACK place_your_function_call_back_here
+#define PMU_VDDC_OL_EN 0
+#define PMU_VDDC_OL_INT_EN 0
+#define PMU_VDDC_OV_CALLBACK place_your_function_call_back_here
+#define PMU_VDDC_OV_EN 0
+#define PMU_VDDC_OV_INT_EN 0
+/*PMU_VDDEXT_CTRL: 0|(0<<1)|(0<<2)*/
+#define PMU_VDDEXT_CTRL (0x0u)
+#define PMU_VDDEXT_FAIL_INT_EN 0
+#define PMU_VDDEXT_OT_CALLBACK place_your_function_call_back_here
+#define PMU_VDDEXT_OT_EN 0
+#define PMU_VDDEXT_OT_INT_EN 0
+#define PMU_VDDEXT_UV_CALLBACK place_your_function_call_back_here
+#define PMU_VDDEXT_UV_EN 0
+#define PMU_VDDEXT_UV_INT_EN 0
+#define PMU_VDDP_OL_CALLBACK place_your_function_call_back_here
+#define PMU_VDDP_OL_EN 0
+#define PMU_VDDP_OL_INT_EN 0
+#define PMU_VDDP_OV_CALLBACK place_your_function_call_back_here
+#define PMU_VDDP_OV_EN 0
+#define PMU_VDDP_OV_INT_EN 0
+#define PMU_WAKEUP_CALLBACK place_your_function_call_back_here
+/*PMU_WAKE_CNF_GPIO0: 0|(0<<8)|(0<<16)|(0<<1)|(0<<9)|(0<<17)|(0<<2)|(0<<10)|(0<\
+<18)|(0<<3)|(0<<11)|(0<<19)|(0<<4)|(0<<12)|(0<<20)*/
+#define PMU_WAKE_CNF_GPIO0 (0x0u)
+/*PMU_WAKE_CNF_GPIO1: 0|(0<<8)|(0<<16)|(0<<1)|(0<<9)|(0<<17)|(0<<2)|(0<<10)|(0<\
+<18)|(0<<3)|(0<<11)|(0<<19)|(0<<4)|(0<<12)|(0<<20)*/
+#define PMU_WAKE_CNF_GPIO1 (0x0u)
+/*PORT_P0_0_ALT: 0*/
+#define PORT_P0_0_ALT (0x0u)
+/*PORT_P0_0_PUD: 0*/
+#define PORT_P0_0_PUD (0x0u)
+/*PORT_P0_1_ALT: 0*/
+#define PORT_P0_1_ALT (0x0u)
+/*PORT_P0_1_PUD: 0*/
+#define PORT_P0_1_PUD (0x0u)
+/*PORT_P0_2_ALT: 0*/
+#define PORT_P0_2_ALT (0x0u)
+/*PORT_P0_2_PUD: 0*/
+#define PORT_P0_2_PUD (0x0u)
+/*PORT_P0_3_ALT: 0*/
+#define PORT_P0_3_ALT (0x0u)
+/*PORT_P0_3_PUD: 0*/
+#define PORT_P0_3_PUD (0x0u)
+/*PORT_P0_4_ALT: 0*/
+#define PORT_P0_4_ALT (0x0u)
+/*PORT_P0_4_PUD: 0*/
+#define PORT_P0_4_PUD (0x0u)
+/*PORT_P0_5_ALT: 0*/
+#define PORT_P0_5_ALT (0x0u)
+/*PORT_P0_5_PUD: 0*/
+#define PORT_P0_5_PUD (0x0u)
+/*PORT_P0_DATA: 0|(0<<1)|(0<<2)|(0<<3)|(0<<4)|(0<<5)*/
+#define PORT_P0_DATA (0x0u)
+/*PORT_P0_DIR: 0|(0<<1)|(0<<2)|(0<<3)|(0<<4)|(0<<5)*/
+#define PORT_P0_DIR (0x0u)
+/*PORT_P0_OD: 0|(0<<1)|(0<<2)|(0<<3)|(0<<4)|(0<<5)*/
+#define PORT_P0_OD (0x0u)
+/*PORT_P1_0_ALT: 3*/
+#define PORT_P1_0_ALT (0x3u)
+/*PORT_P1_0_PUD: 0*/
+#define PORT_P1_0_PUD (0x0u)
+/*PORT_P1_1_ALT: 0*/
+#define PORT_P1_1_ALT (0x0u)
+/*PORT_P1_1_PUD: 0*/
+#define PORT_P1_1_PUD (0x0u)
+/*PORT_P1_2_ALT: 0*/
+#define PORT_P1_2_ALT (0x0u)
+/*PORT_P1_2_PUD: 0*/
+#define PORT_P1_2_PUD (0x0u)
+/*PORT_P1_4_ALT: 0*/
+#define PORT_P1_4_ALT (0x0u)
+/*PORT_P1_4_PUD: 0*/
+#define PORT_P1_4_PUD (0x0u)
+/*PORT_P1_DATA: 0|(0<<1)|(0<<2)|(0<<4)*/
+#define PORT_P1_DATA (0x0u)
+/*PORT_P1_DIR: 1|(0<<1)|(0<<2)|(0<<4)*/
+#define PORT_P1_DIR (0x1u)
+/*PORT_P1_OD: 0|(0<<1)|(0<<2)|(0<<4)*/
+#define PORT_P1_OD (0x0u)
+/*PORT_P2_0_PUD: 0*/
+#define PORT_P2_0_PUD (0x0u)
+/*PORT_P2_1_PUD: 0*/
+#define PORT_P2_1_PUD (0x0u)
+/*PORT_P2_2_PUD: 0*/
+#define PORT_P2_2_PUD (0x0u)
+/*PORT_P2_3_PUD: 0*/
+#define PORT_P2_3_PUD (0x0u)
+/*PORT_P2_4_PUD: 0*/
+#define PORT_P2_4_PUD (0x0u)
+/*PORT_P2_5_PUD: 0*/
+#define PORT_P2_5_PUD (0x0u)
+/*PORT_P2_6_PUD: 0*/
+#define PORT_P2_6_PUD (0x0u)
+/*PORT_P2_7_PUD: 0*/
+#define PORT_P2_7_PUD (0x0u)
+/*PORT_P2_DIR: 0|(0<<1)|(0<<2)|(0<<3)|(0<<4)|(0<<5)|(0<<6)|(0<<7)*/
+#define PORT_P2_DIR (0x0u)
+/*SCUPM_SYS_IRQ_CTRL: (0<<11)|(0<<10)|(0<<9)|(0<<8)*/
+#define SCUPM_SYS_IRQ_CTRL (0x0u)
+/*SCUPM_SYS_SUPPLY_IRQ_CTRL: (0<<5)|0|(0<<6)|(0<<1)|(0<<9)|(0<<4)|(0<<7)|(0<<2)\
+|(0<<8)|(0<<3)*/
+#define SCUPM_SYS_SUPPLY_IRQ_CTRL (0x0u)
+#define SCUPM_WDT1_PERIOD 1008
+#define SCUPM_WDT1_PERIOD_EDIT 1008
+/*SCUPM_WDT1_TRIG: 63*/
+#define SCUPM_WDT1_TRIG (0x3Fu)
+#define SCUPM_WDT1_TRIGGER 699
+/*SCU_APCLK: 1|(19<<8)*/
+#define SCU_APCLK (0x1301u)
+#define SCU_APCLK_FILT_CLK 2
+#define SCU_APCLK_MI_CLK 20
+/*SCU_AUTO_FSYS: 40000000*/
+#define SCU_AUTO_FSYS (0x2625A00u)
+#define SCU_AUTO_FSYS_SEL 0
+/*SCU_BCON1: (0<<1)|0*/
+#define SCU_BCON1 (0x0u)
+/*SCU_BCON2: (0<<1)|1*/
+#define SCU_BCON2 (0x1u)
+#define SCU_CKOUT_FREQ 0.5
+/*SCU_CMCON1: (0<<4)|(1<<8)*/
+#define SCU_CMCON1 (0x100u)
+/*SCU_COCON: (0<<7)|15|(1<<5)|(1<<6)|(1<<4)*/
+#define SCU_COCON (0x7Fu)
+#define SCU_ECC_NVM_DB_CALLBACK place_your_function_call_back_here
+#define SCU_ECC_NVM_DB_INT_EN 0
+#define SCU_ECC_RAM_DB_CALLBACK place_your_function_call_back_here
+#define SCU_ECC_RAM_DB_INT_EN 0
+/*SCU_EDCCON: 0|(0<<2)*/
+#define SCU_EDCCON (0x0u)
+/*SCU_EXICON0: 0|(0<<1)|(0<<2)|(0<<3)|(1<<4)|(1<<5)*/
+#define SCU_EXICON0 (0x30u)
+/*SCU_EXICON1: 0|(0<<1)|(0<<2)|(0<<3)|(1<<4)|(1<<5)|(0<<6)|(0<<7)|(0<<8)|(0<<9)\
+*/
+#define SCU_EXICON1 (0x30u)
+#define SCU_EXINT0_FALLING_INT_EN 0
+#define SCU_EXINT0_RISING_INT_EN 0
+#define SCU_EXINT1_FALLING_INT_EN 0
+#define SCU_EXINT1_RISING_INT_EN 0
+#define SCU_EXINT2_FALLING_INT_EN 0
+#define SCU_EXINT2_RISING_INT_EN 0
+#define SCU_FSYS 4e+07
+/*SCU_GPT12IEN: 0|(0<<1)|(0<<2)|(0<<3)|(0<<5)|(0<<4)*/
+#define SCU_GPT12IEN (0x0u)
+/*SCU_GPT12PISEL: 0*/
+#define SCU_GPT12PISEL (0x0u)
+/*SCU_IEN0: (0<<31)*/
+#define SCU_IEN0 (0x0u)
+/*SCU_LINST: (3<<1)|(0<<6)*/
+#define SCU_LINST (0x6u)
+/*SCU_MODIEN1: (0<<2)|(0<<1)|0|(0<<10)|(0<<9)|(0<<8)*/
+#define SCU_MODIEN1 (0x0u)
+/*SCU_MODIEN2: (0<<5)|0|(0<<1)|(0<<6)|(0<<7)*/
+#define SCU_MODIEN2 (0x0u)
+/*SCU_MODIEN3: 0*/
+#define SCU_MODIEN3 (0x0u)
+/*SCU_MODIEN4: 0*/
+#define SCU_MODIEN4 (0x0u)
+/*SCU_MODPISEL: (0<<16)|2|(0<<2)|(0<<4)|(0<<7)|(0<<6)*/
+#define SCU_MODPISEL (0x2u)
+/*SCU_MODPISEL1: (0<<6)|(1<<7)*/
+#define SCU_MODPISEL1 (0x80u)
+/*SCU_MODPISEL2: 1|(0<<4)|(0<<2)|(0<<6)*/
+#define SCU_MODPISEL2 (0x1u)
+/*SCU_MODPISEL4: 0|(1<<8)|(3<<16)|(4<<24)*/
+#define SCU_MODPISEL4 (0x4030100u)
+/*SCU_MONIEN: 0|(0<<1)|(0<<2)|(0<<3)|(0<<4)*/
+#define SCU_MONIEN (0x0u)
+/*SCU_NMICON: (0<<1)|(0<<2)|(0<<3)|(0<<4)|(0<<5)|(0<<6)|(0<<7)*/
+#define SCU_NMICON (0x0u)
+#define SCU_NMI_MAP_CALLBACK place_your_function_call_back_here
+#define SCU_NMI_MAP_INT_EN 0
+#define SCU_NMI_NVM_CALLBACK place_your_function_call_back_here
+#define SCU_NMI_NVM_INT_EN 0
+#define SCU_NMI_OWD_CALLBACK place_your_function_call_back_here
+#define SCU_NMI_OWD_INT_EN 0
+#define SCU_NMI_PLL_CALLBACK place_your_function_call_back_here
+#define SCU_NMI_PLL_INT_EN 0
+#define SCU_NVM_BOOT_PROT 0
+#define SCU_NVM_CODE_PROT 0
+#define SCU_NVM_DATA_PROT 0
+/*SCU_NVM_PROT_PW: 0*/
+#define SCU_NVM_PROT_PW (0x0u)
+/*SCU_OSC_CON: 16*/
+#define SCU_OSC_CON (0x10u)
+#define SCU_PINSEL 0
+/*SCU_PLL_CON: (10<<4)*/
+#define SCU_PLL_CON (0xA0u)
+#define SCU_PLL_fPLL 40
+/*SCU_WAKECON: 0*/
+#define SCU_WAKECON (0x0u)
+#define SCU_XTAL_EN 0
+#define SCU_XTAL_FREQ 5
+#define SSC1_AUTO_BAUDRATE 3
+#define SSC1_AUTO_BAUD_SEL 0
+/*SSC1_BR: 19*/
+#define SSC1_BR (0x13u)
+/*SSC1_CON: (0<<15)|(0<<14)|1|(0<<4)|(0<<5)|(0<<6)|(0<<7)|(0<<8)|(0<<9)|(0<<10)\
+|(0<<11)|(0<<12)*/
+#define SSC1_CON (0x1u)
+#define SSC1_ERR_CALLBACK place_your_function_call_back_here
+#define SSC1_ERR_INT_EN 0
+#define SSC1_MAN_BAUDRATE 1000
+#define SSC1_PISEL 0
+#define SSC1_RX_CALLBACK place_your_function_call_back_here
+#define SSC1_RX_INT_EN 0
+#define SSC1_TEMP_BR 1000
+#define SSC1_TEMP_BRG 0
+#define SSC1_TEMP_CIS 0
+#define SSC1_TEMP_CLK 40
+#define SSC1_TEMP_COS 0
+#define SSC1_TEMP_MIS 0
+#define SSC1_TEMP_MOS 0
+#define SSC1_TEMP_MS 2
+#define SSC1_TEMP_SIS 0
+#define SSC1_TEMP_SOS 0
+#define SSC1_TX_CALLBACK place_your_function_call_back_here
+#define SSC1_TX_INT_EN 0
+#define SSC2_AUTO_BAUDRATE 3
+#define SSC2_AUTO_BAUD_SEL 0
+/*SSC2_BR: 19*/
+#define SSC2_BR (0x13u)
+/*SSC2_CON: (0<<15)|(0<<14)|1|(0<<4)|(0<<5)|(0<<6)|(0<<7)|(0<<8)|(0<<9)|(0<<10)\
+|(0<<11)|(0<<12)*/
+#define SSC2_CON (0x1u)
+#define SSC2_ERR_CALLBACK place_your_function_call_back_here
+#define SSC2_ERR_INT_EN 0
+#define SSC2_MAN_BAUDRATE 1000
+#define SSC2_PISEL 0
+#define SSC2_RX_CALLBACK place_your_function_call_back_here
+#define SSC2_RX_INT_EN 0
+#define SSC2_TEMP_BR 1000
+#define SSC2_TEMP_BRG 0
+#define SSC2_TEMP_CIS 0
+#define SSC2_TEMP_CLK 40
+#define SSC2_TEMP_COS 0
+#define SSC2_TEMP_MIS 0
+#define SSC2_TEMP_MOS 0
+#define SSC2_TEMP_MS 2
+#define SSC2_TEMP_SIS 0
+#define SSC2_TEMP_SOS 0
+#define SSC2_TX_CALLBACK place_your_function_call_back_here
+#define SSC2_TX_INT_EN 0
+#define SWM_SM_CHANNELS 0
+#define TIMER21_1IN_EN 0
+#define TIMER21_CLK 3.33333
+/*TIMER21_CON: (0<<3)|(0<<1)|0*/
+#define TIMER21_CON (0x0u)
+/*TIMER21_CON1: 0|(0<<1)*/
+#define TIMER21_CON1 (0x0u)
+#define TIMER21_Configuration_En 0
+#define TIMER21_EXF21_PINSEL 0
+#define TIMER21_EXF2_CALLBACK place_your_function_call_back_here
+#define TIMER21_EXF2_INT_EN 0
+#define TIMER21_MAX_PERIOD 19660.5
+/*TIMER21_MOD: (0<<4)|(0<<1)|0|(0<<5)|(0<<6)|(0<<7)*/
+#define TIMER21_MOD (0x0u)
+/*TIMER21_RC2: 65535*/
+#define TIMER21_RC2 (0xFFFFu)
+/*TIMER21_T2: 65535*/
+#define TIMER21_T2 (0xFFFFu)
+#define TIMER21_TEMP_TIMER2_SEL 0
+/*TIMER21_TEMP_TIMER2_TICK: 1*/
+#define TIMER21_TEMP_TIMER2_TICK (0x1u)
+#define TIMER21_TEMP_TIMER2_TIME 1
+#define TIMER21_TEMP_TIMER2_TIME_SEL 0
+/*TIMER21_TEMP_TIME_TICK: 1*/
+#define TIMER21_TEMP_TIME_TICK (0x1u)
+#define TIMER21_TEMP_TIME_TIME 1
+#define TIMER21_TF2_CALLBACK place_your_function_call_back_here
+#define TIMER21_TF2_INT_EN 0
+#define TIMER2_CLK 3.33333
+/*TIMER2_CON: (0<<3)|(0<<1)|0*/
+#define TIMER2_CON (0x0u)
+/*TIMER2_CON1: 0|(0<<1)*/
+#define TIMER2_CON1 (0x0u)
+#define TIMER2_Configuration_En 0
+#define TIMER2_EXF2_CALLBACK place_your_function_call_back_here
+#define TIMER2_EXF2_INT_EN 0
+#define TIMER2_EXF2_PINSEL 0
+#define TIMER2_MAX_PERIOD 19660.5
+/*TIMER2_MOD: (0<<4)|(0<<1)|0|(0<<5)|(0<<6)|(0<<7)*/
+#define TIMER2_MOD (0x0u)
+/*TIMER2_RC2: 65535*/
+#define TIMER2_RC2 (0xFFFFu)
+/*TIMER2_T2: 65535*/
+#define TIMER2_T2 (0xFFFFu)
+#define TIMER2_TEMP_TIMER2_SEL 0
+/*TIMER2_TEMP_TIMER2_TICK: 1*/
+#define TIMER2_TEMP_TIMER2_TICK (0x1u)
+#define TIMER2_TEMP_TIMER2_TIME 1
+#define TIMER2_TEMP_TIMER2_TIME_SEL 0
+/*TIMER2_TEMP_TIME_TICK: 1*/
+#define TIMER2_TEMP_TIME_TICK (0x1u)
+#define TIMER2_TEMP_TIME_TIME 1
+#define TIMER2_TF2_CALLBACK place_your_function_call_back_here
+#define TIMER2_TF2_INT_EN 0
+#define UART1_AUTO_BAUDRATE 1
+#define UART1_AUTO_BAUD_SEL 0
+#define UART1_BAUDRATE 19203.1
+/*UART1_BRVAL: 130*/
+#define UART1_BRVAL (0x82u)
+#define UART1_CLK 40
+#define UART1_Configuration_En 0
+/*UART1_FD: 6*/
+#define UART1_FD (0x6u)
+#define UART1_MAN_BAUDRATE 19200
+#define UART1_RXD_PINSEL 0
+#define UART1_RX_CALLBACK place_your_function_call_back_here
+#define UART1_RX_INT_EN 0
+/*UART1_SCON: (1<<6)|(0<<5)|(0<<4)*/
+#define UART1_SCON (0x40u)
+#define UART1_STD_EN 0
+#define UART1_TXD_PINSEL 0
+#define UART1_TX_CALLBACK place_your_function_call_back_here
+#define UART1_TX_INT_EN 0
+#define UART2_AUTO_BAUDRATE 4
+#define UART2_AUTO_BAUD_SEL 0
+#define UART2_BAUDRATE 115274
+/*UART2_BRVAL: 21*/
+#define UART2_BRVAL (0x15u)
+#define UART2_CLK 40
+#define UART2_Configuration_En 1
+/*UART2_FD: 22*/
+#define UART2_FD (0x16u)
+#define UART2_MAN_BAUDRATE 115200
+#define UART2_RXD_PINSEL 0
+#define UART2_RX_CALLBACK place_your_function_call_back_here
+#define UART2_RX_INT_EN 0
+/*UART2_SCON: (1<<6)|(0<<5)|(0<<4)*/
+#define UART2_SCON (0x40u)
+#define UART2_STD_EN 1
+#define UART2_TXD_PINSEL 1
+#define UART2_TX_CALLBACK place_your_function_call_back_here
+#define UART2_TX_INT_EN 0
+
+#endif
