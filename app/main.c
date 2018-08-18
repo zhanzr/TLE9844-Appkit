@@ -9,6 +9,8 @@
 #include <stdio.h>
 #include <stdint.h>
 
+#include "asm_prototype.h"
+
 #define	TEST_DELAY_MS	1000
 
 __IO uint32_t g_Ticks;
@@ -42,6 +44,11 @@ void HAL_Delay(uint32_t t)
 	}  
 }
 
+void TestFunct(void)
+{
+	printf("CPUID:%08X\n", SCB->CPUID);
+}
+
 int main(void)
 {
   TLE_Init();
@@ -49,24 +56,23 @@ int main(void)
   /* System timer configuration */
   SysTick_Config(SystemFrequency / 1000);
 	
-  printf("UART2 ADC Demo %s %s %u\n", 
+  printf("Assembler Demo 1 %s %s %u\n", 
 	__DATE__, 
 	__TIME__,
 	SystemFrequency);
 	
-  /* Switch On LS Modules */
-  LS1_On();
-  LS2_On();
+	printf("Part 1\n");
+	printf("Test 1 Result:%u\n", asm_get_8bit_number());
+	printf("Test 2 Result:%08X\t[%08X]\n", asm_get_xor(0x12345678, 0x34567890), 0x12345678^0x34567890);
+	printf("Test 3 Direct Jump:%08X\n", TestFunct);
+	printf("Jump 1, Before.%08X\n", __get_MSP());
+	asm_direct_jump_1(TestFunct);
+	printf("Jump 1, After.%08X\n\n", __get_MSP());
 	
-  for (;;)
-  {		
-  printf("%s %s %u %u\n", 
-	__DATE__, 
-	__TIME__,
-	SystemFrequency,
-		g_Ticks);
-		
-	/* Channel 0 - VS */
+	printf("Jump 2, Before.%08X\n", __get_MSP());
+	asm_direct_jump_2(TestFunct);
+	printf("Jump 2, After.%08X\n\n", __get_MSP());
+ 	/* Channel 0 - VS */
 	/* Channel 1 - VDDEXT */
 	/* Channel 2 - VDDP */
 	/* Channel 3 - VBG */
@@ -82,18 +88,9 @@ int main(void)
 		ADC2_GetChResult_mVC(ADC2_RESULT_TEMP1),
 		ADC2_GetChResult_mVC(ADC2_RESULT_TEMP2)
 		);
-
-/* Enabel Relais coil 1 */
-		LS1_En();
-		HAL_Delay(TEST_DELAY_MS);
-		/* Disabel Relais coil 1 */
-		LS1_Dis();		
-		HAL_Delay(TEST_DELAY_MS);
-		/* Enabel Relais coil 2 */
-		LS2_En();
-		HAL_Delay(TEST_DELAY_MS);
-		/* Disabel Relais coil 2 */
-		LS2_Dis();			
-		HAL_Delay(TEST_DELAY_MS);
+		
+  for (;;)
+  {		
+		__WFI();
   }
 }

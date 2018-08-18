@@ -386,6 +386,11 @@
               <FileType>1</FileType>
               <FilePath>.\app\main.c</FilePath>
             </File>
+            <File>
+              <FileName>asm_prototype.h</FileName>
+              <FileType>5</FileType>
+              <FilePath>.\app\asm_prototype.h</FilePath>
+            </File>
           </Files>
         </Group>
         <Group>
