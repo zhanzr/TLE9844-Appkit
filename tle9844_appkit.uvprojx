@@ -323,7 +323,7 @@
             <wLevel>2</wLevel>
             <uThumb>0</uThumb>
             <uSurpInc>0</uSurpInc>
-            <uC99>0</uC99>
+            <uC99>1</uC99>
             <uGnu>0</uGnu>
             <useXO>0</useXO>
             <v6Lang>0</v6Lang>
@@ -385,6 +385,16 @@
               <FileName>main.c</FileName>
               <FileType>1</FileType>
               <FilePath>.\app\main.c</FilePath>
+            </File>
+          </Files>
+        </Group>
+        <Group>
+          <GroupName>asm_src</GroupName>
+          <Files>
+            <File>
+              <FileName>asm_test_1.s</FileName>
+              <FileType>2</FileType>
+              <FilePath>.\app\asm_test_1.s</FilePath>
             </File>
           </Files>
         </Group>
