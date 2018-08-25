@@ -1,3 +1,3 @@
 TLE9844-2QX Appkit Demo
 
-3. Compare, And, Or, Not, Shift, Rotate, Load, Store, Push, Pop
+4. Extend, Reverse, SVC, MRS, MSR

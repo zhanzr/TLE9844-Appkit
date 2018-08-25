@@ -53,34 +53,43 @@ uint32_t g_TestVar32;// __attribute__((at(0x20003FF8)));
 
 int main(void)
 {
-	uint32_t tmpTick;
-	
   TLE_Init();
 	
   /* System timer configuration */
   SysTick_Config(SystemFrequency / 1000);
 	
-  printf("Assembler Demo 3 %s %s %u\n", 
+  printf("Assembler Demo 4 %s %s %u\n", 
 	__DATE__, 
 	__TIME__,
 	SystemFrequency);
+		
+	printf("%04X in16_t extend:%08X\n", 0x8001, asm_s16ext((int16_t)0x8001));
+	printf("%02X in8_t extend:%08X\n", 0xC4, asm_s8ext((int8_t)0xC4));
+	printf("%04X uin16_t extend:%08X\n",0x8001, asm_u16ext((uint16_t)0x8001));
+	printf("%08X rev: %08X\n", 0x123456C8, asm_rev(0x123456C8));
+	printf("%08X rev16 :%08X\n", 0x123456C8, asm_rev16(0x123456C8));
+	printf("%08X revsh :%08X\n", 0x123456C8, asm_revsh(0x123456C8));
 	
-	printf("Compare %u %u Result:%u\n", 123, 456, asm_test_cmp(123, 456));
-	printf("Compare Not %u %u Result:%u\n", 123, 456, asm_test_cmn(123, 456));
-	printf("%08X AND %08X Result:%08X\n", 0x12345678, 0x34567890, asm_get_and(0x12345678, 0x34567890));
-	printf("%08X OR %08X Result:%08X\n", 0x12345678, 0x34567890, asm_get_or(0x12345678, 0x34567890));
-	printf("NOT %08X Result:%08X\n", 0x12345678, asm_get_not(0x12345678));
-
-	printf("%08X Logic Left Shift %u Result:%08X\n",0x80000001, 2, asm_logic_left(0x80000001, 2));
-	printf("%08X Logic Right Shift %u Result:%08X\n",0x80000001, 2, asm_logic_right(0x80000001, 2));
-	printf("%08X Arithm Right Shift %u Result:%08X\n",0x80000001, 2, asm_arithm_right(0x80000001, 2));
-	printf("%08X Rotate Right Shift %u Result:%08X\n",0x80000001, 2, asm_rotate_right(0x80000001, 2));
+	//Part 8: Test SVC, MSR, MRS
+	printf("Before SVC #1\n");
+	asm_svc_1();
+	printf("After SVC #1\n");
 	
-	g_TestVar32 = 0x12345678;
-	printf("Load[%08X] Result:%08X\n",&g_TestVar32, asm_ldr32(&g_TestVar32));
-	asm_str32(&g_TestVar32, 0x78904563);	
-	printf("After Store[%08X] Result:%08X\n",&g_TestVar32, asm_ldr32(&g_TestVar32));
-	printf("PUSH/POP Result:%u\n", asm_test_push_pop(123, 456));
+	printf("Before SVC #2\n");
+	asm_svc_2();
+	printf("After SVC #2\n");	
+	
+	g_TestVar32 = asm_test_mrs();
+	printf("MRS read PRIMASK:%08X\n", g_TestVar32);
+	printf("Tick:%u\n", SysTick->VAL);
+	asm_test_msr(0x00000001);
+	uint32_t p1 = asm_test_mrs();
+	asm_test_msr(0x00000000);
+	uint32_t p2 = asm_test_mrs();
+	printf("MSR %08X\t%08X\n", p1, p2);
+	
+	//Recover the field
+	asm_test_msr(g_TestVar32);
 	
  	/* Channel 0 - VS */
 	/* Channel 1 - VDDEXT */

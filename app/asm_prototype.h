@@ -39,7 +39,8 @@ extern uint32_t asm_rev(uint32_t in);
 extern uint32_t asm_rev16(uint32_t in);
 extern uint32_t asm_revsh(uint32_t in);
 
-extern void asm_svc_1(uint32_t in);
+extern void asm_svc_1(void);
+extern void asm_svc_2(void);
 extern void asm_test_msr(uint32_t in);
 extern uint32_t asm_test_mrs(void);
 

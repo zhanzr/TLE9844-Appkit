@@ -397,19 +397,14 @@
           <GroupName>asm_src</GroupName>
           <Files>
             <File>
-              <FileName>asm_test_4.s</FileName>
+              <FileName>asm_test_7.s</FileName>
               <FileType>2</FileType>
-              <FilePath>.\app\asm_test_4.s</FilePath>
+              <FilePath>.\app\asm_test_7.s</FilePath>
             </File>
             <File>
-              <FileName>asm_test_5.s</FileName>
+              <FileName>asm_test_8.s</FileName>
               <FileType>2</FileType>
-              <FilePath>.\app\asm_test_5.s</FilePath>
-            </File>
-            <File>
-              <FileName>asm_test_6.s</FileName>
-              <FileType>2</FileType>
-              <FilePath>.\app\asm_test_6.s</FilePath>
+              <FilePath>.\app\asm_test_8.s</FilePath>
             </File>
           </Files>
         </Group>
