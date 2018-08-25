@@ -80,7 +80,7 @@ int main(void)
 	printf("Load[%08X] Result:%08X\n",&g_TestVar32, asm_ldr32(&g_TestVar32));
 	asm_str32(&g_TestVar32, 0x78904563);	
 	printf("After Store[%08X] Result:%08X\n",&g_TestVar32, asm_ldr32(&g_TestVar32));
-	printf("ASM Test 22 Result:%u\n", asm_test_push_pop(123, 456));
+	printf("PUSH/POP Result:%u\n", asm_test_push_pop(123, 456));
 	
  	/* Channel 0 - VS */
 	/* Channel 1 - VDDEXT */
