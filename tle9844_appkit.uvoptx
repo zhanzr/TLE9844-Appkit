@@ -103,7 +103,7 @@
         <bEvRecOn>1</bEvRecOn>
         <bSchkAxf>0</bSchkAxf>
         <bTchkAxf>0</bTchkAxf>
-        <nTsel>4</nTsel>
+        <nTsel>0</nTsel>
         <sDll></sDll>
         <sDllPa></sDllPa>
         <sDlgDll></sDlgDll>
@@ -114,22 +114,13 @@
         <tDlgDll></tDlgDll>
         <tDlgPa></tDlgPa>
         <tIfile></tIfile>
-        <pMon>Segger\JL2CM3.dll</pMon>
+        <pMon>BIN\UL2CM3.DLL</pMon>
       </DebugOpt>
       <TargetDriverDllRegistry>
         <SetRegEntry>
           <Number>0</Number>
-          <Key>DLGUARM</Key>
-        </SetRegEntry>
-        <SetRegEntry>
-          <Number>0</Number>
-          <Key>JL2CM3</Key>
-          <Name>-U591112566 -O78 -S3 -ZTIFSpeedSel3000 -A0 -C0 -JU1 -JI127.0.0.1 -JP0 -RST0 -N00("ARM CoreSight SW-DP") -D00(0BB11477) -L00(0) -TO18 -TC10000000 -TP21 -TDS8007 -TDT0 -TDC1F -TIEFFFFFFFF -TIP8 -TB1 -TFE0 -FO11 -FD18000000 -FC1000 -FN3 -FF0TLE9844.FLM -FS011000000 -FL0F000 -FP0($$Device:TLE9844QX$Flash\TLE9844.FLM) -FF1TLE9844_EEP.FLM -FS11100F000 -FL11000 -FP1($$Device:TLE9844QX$Flash\TLE9844_EEP.FLM) -FF2TLE984x_OPT.FLM -FS210FFFFFC -FL24 -FP2($$Device:TLE9844QX$Flash\TLE984x_OPT.FLM)</Name>
-        </SetRegEntry>
-        <SetRegEntry>
-          <Number>0</Number>
           <Key>UL2CM3</Key>
-          <Name>UL2CM3(-S0 -C0 -P0 ) --FF1TLE984x_OPT.FLM  -FN3 -FC1000 -FD18000000 -FF0TLE9844 -FF1TLE9844_EEP -FF2TLE984x_OPT -FL0F000 -FL11000 -FL24 -FS011000000 -FS11100F000 -FS210FFFFFC -FP0($$Device:TLE9844QX$Flash\TLE9844.FLM) -FP1($$Device:TLE9844QX$Flash\TLE9844_EEP.FLM) -FP2($$Device:TLE9844QX$Flash\TLE984x_OPT.FLM)</Name>
+          <Name>UL2CM3(-S0 -C0 -P0 ) --FF1TLE984x_OPT.FLM  -FN3 -FC1000 -FD18000000 -FF0TLE9844_2 -FF1TLE9844_2_EEP -FF2TLE984x_OPT -FL0F000 -FL11000 -FL24 -FS011000000 -FS11100F000 -FS210FFFFFC -FP0($$Device:TLE9844-2QX$Flash\TLE9844_2.FLM) -FP1($$Device:TLE9844-2QX$Flash\TLE9844_2_EEP.FLM) -FP2($$Device:TLE9844-2QX$Flash\TLE984x_OPT.FLM)</Name>
         </SetRegEntry>
         <SetRegEntry>
           <Number>0</Number>
@@ -324,7 +315,7 @@
 
   <Group>
     <GroupName>::Device</GroupName>
-    <tvExp>0</tvExp>
+    <tvExp>1</tvExp>
     <tvExpOptDlg>0</tvExpOptDlg>
     <cbSel>0</cbSel>
     <RteFlg>1</RteFlg>
