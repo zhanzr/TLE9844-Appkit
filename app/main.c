@@ -49,6 +49,8 @@ void TestFunct(void)
 	printf("CPUID:%08X\n", SCB->CPUID);
 }
 
+uint32_t g_TestVar32;// __attribute__((at(0x20003FF8)));
+
 int main(void)
 {
 	uint32_t tmpTick;
@@ -58,49 +60,27 @@ int main(void)
   /* System timer configuration */
   SysTick_Config(SystemFrequency / 1000);
 	
-  printf("Assembler Demo 2 %s %s %u\n", 
+  printf("Assembler Demo 3 %s %s %u\n", 
 	__DATE__, 
 	__TIME__,
 	SystemFrequency);
 	
-	printf("ASM Test 4 :%u\n", asm_add2(34));
-	printf("ASM Test 5 :%u\n", asm_simple_add(123, 456));
-	printf("ASM Test 6 :%u\n", asm_pc_add());
-	
-	printf("ASM Test 7 :%d\n", asm_sub20(34));
-	printf("ASM Test 8 :%d\n", asm_simple_sub(123, 456));
-	printf("ASM Test 9 :%d\n", asm_get_neg(1024));
+	printf("Compare %u %u Result:%u\n", 123, 456, asm_test_cmp(123, 456));
+	printf("Compare Not %u %u Result:%u\n", 123, 456, asm_test_cmn(123, 456));
+	printf("%08X AND %08X Result:%08X\n", 0x12345678, 0x34567890, asm_get_and(0x12345678, 0x34567890));
+	printf("%08X OR %08X Result:%08X\n", 0x12345678, 0x34567890, asm_get_or(0x12345678, 0x34567890));
+	printf("NOT %08X Result:%08X\n", 0x12345678, asm_get_not(0x12345678));
 
-	printf("ASM Test 10 Result:%u\t[%u]\n", asm_simple_mul(123, 456), 123*456);
-
-	//Test Addition/Mulitiplication Cycles
-#define	TEST_ADD_MUL_NUM	50000
-	//If the muliplication takes similar cycles, it is a single cycle multiplication implementation
-	tmpTick = g_Ticks;
-	for(uint32_t i=0; i<TEST_ADD_MUL_NUM; ++i)
-	{
-		uint32_t tn = 101;
-		asm_simple_add(tn, 456);
-	}
-	tmpTick = g_Ticks-tmpTick;
-	printf("A:%u\n", tmpTick);	
+	printf("%08X Logic Left Shift %u Result:%08X\n",0x80000001, 2, asm_logic_left(0x80000001, 2));
+	printf("%08X Logic Right Shift %u Result:%08X\n",0x80000001, 2, asm_logic_right(0x80000001, 2));
+	printf("%08X Arithm Right Shift %u Result:%08X\n",0x80000001, 2, asm_arithm_right(0x80000001, 2));
+	printf("%08X Rotate Right Shift %u Result:%08X\n",0x80000001, 2, asm_rotate_right(0x80000001, 2));
 	
-	tmpTick = g_Ticks;
-	for(uint32_t i=0; i<TEST_ADD_MUL_NUM; ++i)
-	{		
-		uint32_t tn = 101;
-		asm_simple_mul(tn, 456);
-	}
-	tmpTick = g_Ticks-tmpTick;
-	printf("M:%u\n", tmpTick);	
-	
-	//Test Division
-	{
-		uint32_t ta = 10;
-		uint32_t tb = 2;
-		uint32_t tc = ta/tb;
-		printf("%u %u %u\n", ta, tb, tc);
-	}
+	g_TestVar32 = 0x12345678;
+	printf("Load[%08X] Result:%08X\n",&g_TestVar32, asm_ldr32(&g_TestVar32));
+	asm_str32(&g_TestVar32, 0x78904563);	
+	printf("After Store[%08X] Result:%08X\n",&g_TestVar32, asm_ldr32(&g_TestVar32));
+	printf("ASM Test 22 Result:%u\n", asm_test_push_pop(123, 456));
 	
  	/* Channel 0 - VS */
 	/* Channel 1 - VDDEXT */
