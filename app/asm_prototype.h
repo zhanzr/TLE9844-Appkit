@@ -44,4 +44,7 @@ extern void asm_svc_2(void);
 extern void asm_test_msr(uint32_t in);
 extern uint32_t asm_test_mrs(void);
 
+extern int32_t asm_rand_32(int32_t i_Seed);
+extern int32_t asm_dot_prod_32(int32_t *pi_x, int32_t *pi_y, int32_t i_VectorLen);
+
 #endif //__ASM_PROTOTYPE_H__

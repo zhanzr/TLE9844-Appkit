@@ -397,14 +397,14 @@
           <GroupName>asm_src</GroupName>
           <Files>
             <File>
-              <FileName>asm_test_7.s</FileName>
+              <FileName>dspRand32.s</FileName>
               <FileType>2</FileType>
-              <FilePath>.\app\asm_test_7.s</FilePath>
+              <FilePath>.\app\dspRand32.s</FilePath>
             </File>
             <File>
-              <FileName>asm_test_8.s</FileName>
+              <FileName>dotProduct32.s</FileName>
               <FileType>2</FileType>
-              <FilePath>.\app\asm_test_8.s</FilePath>
+              <FilePath>.\app\dotProduct32.s</FilePath>
             </File>
           </Files>
         </Group>

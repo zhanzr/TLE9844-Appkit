@@ -4,14 +4,14 @@
  * Author: zhanzr(zhanzr@foxmail.com)
  *
  ******************************************************************************/
- 
-#include <tle_device.h>
 #include <stdio.h>
 #include <stdint.h>
+#include <stdlib.h>
+#include <tle_device.h>
 
 #include "asm_prototype.h"
 
-#define	TEST_DELAY_MS	1000
+#define	RNG_TEST_NUM	100000
 
 __IO uint32_t g_Ticks;
 
@@ -30,66 +30,128 @@ void SimpleDelay(uint32_t t)
 	}  
 }
 
-uint32_t HAL_Ticks(void)
+uint32_t HAL_GetTick(void)
 {
 	return g_Ticks;
 }
 
 void HAL_Delay(uint32_t t)
 {
-	uint32_t d = t + HAL_Ticks();
-	while(d > HAL_Ticks())
+	uint32_t d = t + HAL_GetTick();
+	while(d > HAL_GetTick())
 	{
 		(void)WDT1_Service();	
 	}  
 }
 
-void TestFunct(void)
+bool test_dspRand32(void)
 {
-	printf("CPUID:%08X\n", SCB->CPUID);
+	__IO int i_Random = 1;
+	__IO int i_RandomLast = 0;
+	volatile uint32_t i;
+
+	bool ret = true;
+	
+	for(i = 0; i < RNG_TEST_NUM; i++)
+	{
+		/* Generate random number */
+		i_Random = asm_rand_32(i_Random);
+		//printf("rn = %08X\t", i_Random);
+
+		/* Check number is not same as last one produced */
+		if (i_Random != i_RandomLast)
+		{
+			i_RandomLast = i_Random;
+		}
+		else 
+		{
+			/* Test failed */
+			ret = false;
+			break;
+		}
+	}
+
+	return ret;
 }
 
-uint32_t g_TestVar32;// __attribute__((at(0x20003FF8)));
+bool test_stdlib_rand(void)
+{
+	__IO int i_Random = 1;
+	__IO int i_RandomLast = 0;
+	volatile uint32_t i;
+
+	bool ret = true;
+	
+	for(i = 0; i < RNG_TEST_NUM; i++)
+	{
+		/* Generate random number */
+		i_Random = rand();
+		//printf("rn = %08X\t", i_Random);
+
+		/* Check number is not same as last one produced */
+		if (i_Random != i_RandomLast)
+		{
+			i_RandomLast = i_Random;
+		}
+		else 
+		{
+			/* Test failed */
+			ret = false;
+			break;
+		}
+	}
+
+	return ret;
+}
 
 int main(void)
 {
+	uint32_t tmpTick;
+	
   TLE_Init();
 	
   /* System timer configuration */
   SysTick_Config(SystemFrequency / 1000);
 	
-  printf("Assembler Demo 4 %s %s %u\n", 
-	__DATE__, 
+  printf("Assembler Demo 5 %08X %s %u\n", 
+	SCB->CPUID, 
 	__TIME__,
 	SystemFrequency);
 		
-	printf("%04X in16_t extend:%08X\n", 0x8001, asm_s16ext((int16_t)0x8001));
-	printf("%02X in8_t extend:%08X\n", 0xC4, asm_s8ext((int8_t)0xC4));
-	printf("%04X uin16_t extend:%08X\n",0x8001, asm_u16ext((uint16_t)0x8001));
-	printf("%08X rev: %08X\n", 0x123456C8, asm_rev(0x123456C8));
-	printf("%08X rev16 :%08X\n", 0x123456C8, asm_rev16(0x123456C8));
-	printf("%08X revsh :%08X\n", 0x123456C8, asm_revsh(0x123456C8));
+	//Test Random number generator
+	tmpTick = HAL_GetTick();
+	bool ret = test_dspRand32();
+	tmpTick = HAL_GetTick() - tmpTick;
+	printf("\ndspRand32:%s\n", ret?"OK":"FAILED");
+	printf("%u\n", tmpTick);
 	
-	//Part 8: Test SVC, MSR, MRS
-	printf("Before SVC #1\n");
-	asm_svc_1();
-	printf("After SVC #1\n");
+	#ifdef __USE_ANSI_EXAMPLE_RAND
+	printf("Use ANSI example rand.\n");
+	#else
+	printf("use CLib rand.\n");
+	#endif	
+	tmpTick = HAL_GetTick();
+	ret = test_stdlib_rand();
+	tmpTick = HAL_GetTick() - tmpTick;
+	printf("\nstdlib rand:%s\n", 
+	ret?"OK":"FAILED");
+	printf("%u\n", tmpTick);
 	
-	printf("Before SVC #2\n");
-	asm_svc_2();
-	printf("After SVC #2\n");	
+	//Test dot Product
+	//Verification Python Code
+	//a=[1,20,3,40,5,60,7,80,9,100]
+	//b=[1, -1, 1, -1, 1, -1, 1, -1, 1, -1]
+	//prod=0
+	//l = len(a)
+	//for i in range(l):
+	//	prod += a[i]*b[i]
+	//print(prod)
 	
-	g_TestVar32 = asm_test_mrs();
-	printf("MRS read PRIMASK:%08X\n", g_TestVar32);
-	printf("Tick:%u\n", SysTick->VAL);
-	asm_test_msr(0x00000001);
-	uint32_t p1 = asm_test_mrs();
-	asm_test_msr(0x00000000);
-	uint32_t p2 = asm_test_mrs();
-	printf("MSR %08X\t%08X\n", p1, p2);
-	
-	//Recover the field
-	asm_test_msr(g_TestVar32);
+#define	VECT_LEN	10
+	int32_t testV1[VECT_LEN] = {1,20,3,40,5,60,7,80,9,100};
+	int32_t testV2[VECT_LEN] = {1, -1, 1, -1, 1, -1, 1, -1, 1, -1};
+	int32_t result_dotProduct = asm_dot_prod_32(testV1, testV2, VECT_LEN);
+	printf("dotProduct:%d\n", result_dotProduct);
 	
  	/* Channel 0 - VS */
 	/* Channel 1 - VDDEXT */
