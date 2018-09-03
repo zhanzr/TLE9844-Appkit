@@ -47,4 +47,12 @@ extern uint32_t asm_test_mrs(void);
 extern int32_t asm_rand_32(int32_t i_Seed);
 extern int32_t asm_dot_prod_32(int32_t *pi_x, int32_t *pi_y, int32_t i_VectorLen);
 
+typedef struct
+{
+	int16_t pi_Coeff[5];
+	int16_t pi_State[2];
+}tS_biquad32_StateCoeff;
+
+extern void vF_dspl_biquad32(int32_t *pi_Output, int32_t *pi_Input, tS_biquad32_StateCoeff *pS_StateCoeff, int32_t i_NSamples);
+
 #endif //__ASM_PROTOTYPE_H__

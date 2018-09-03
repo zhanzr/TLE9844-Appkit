@@ -187,7 +187,7 @@
             <hadIRAM2>0</hadIRAM2>
             <hadIROM2>1</hadIROM2>
             <StupSel>8</StupSel>
-            <useUlib>1</useUlib>
+            <useUlib>0</useUlib>
             <EndSel>0</EndSel>
             <uLtcg>0</uLtcg>
             <nSecure>0</nSecure>
@@ -311,7 +311,7 @@
           </ArmAdsMisc>
           <Cads>
             <interw>1</interw>
-            <Optim>1</Optim>
+            <Optim>4</Optim>
             <oTime>0</oTime>
             <SplitLS>0</SplitLS>
             <OneElfS>1</OneElfS>
@@ -397,14 +397,9 @@
           <GroupName>asm_src</GroupName>
           <Files>
             <File>
-              <FileName>dspRand32.s</FileName>
+              <FileName>dspBiquad32.s</FileName>
               <FileType>2</FileType>
-              <FilePath>.\app\dspRand32.s</FilePath>
-            </File>
-            <File>
-              <FileName>dotProduct32.s</FileName>
-              <FileType>2</FileType>
-              <FilePath>.\app\dotProduct32.s</FilePath>
+              <FilePath>.\app\dspBiquad32.s</FilePath>
             </File>
           </Files>
         </Group>

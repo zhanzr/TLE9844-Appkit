@@ -6,12 +6,13 @@
  ******************************************************************************/
 #include <stdio.h>
 #include <stdint.h>
+//#define __USE_ANSI_EXAMPLE_RAND
 #include <stdlib.h>
 #include <tle_device.h>
 
 #include "asm_prototype.h"
 
-#define	RNG_TEST_NUM	100000
+#define	RNG_TEST_NUM	10
 
 __IO uint32_t g_Ticks;
 
@@ -44,64 +45,31 @@ void HAL_Delay(uint32_t t)
 	}  
 }
 
-bool test_dspRand32(void)
+#define TEST_BIQUAD_SIZE 	64
+
+//4.28 Q Format
+int32_t pi_Input[TEST_BIQUAD_SIZE];
+int32_t pi_Output[TEST_BIQUAD_SIZE];
+
+void vF_dsplib_testbench_biquad32(void)
 {
-	__IO int i_Random = 1;
-	__IO int i_RandomLast = 0;
-	volatile uint32_t i;
+	int j;
 
-	bool ret = true;
-	
-	for(i = 0; i < RNG_TEST_NUM; i++)
+	tS_biquad32_StateCoeff S_StateCoeff =
 	{
-		/* Generate random number */
-		i_Random = asm_rand_32(i_Random);
-		//printf("rn = %08X\t", i_Random);
+		//2.14 Q Format
+		{0x2000, 0, 0x4000, 0, 0},
+		{0, 0}
+	};
 
-		/* Check number is not same as last one produced */
-		if (i_Random != i_RandomLast)
-		{
-			i_RandomLast = i_Random;
-		}
-		else 
-		{
-			/* Test failed */
-			ret = false;
-			break;
-		}
-	}
+	pi_Input[0] = 0x10000000;
 
-	return ret;
-}
+	vF_dspl_biquad32(pi_Output, pi_Input, &S_StateCoeff, TEST_BIQUAD_SIZE);
 
-bool test_stdlib_rand(void)
-{
-	__IO int i_Random = 1;
-	__IO int i_RandomLast = 0;
-	volatile uint32_t i;
-
-	bool ret = true;
-	
-	for(i = 0; i < RNG_TEST_NUM; i++)
+	for(j = 0; j < TEST_BIQUAD_SIZE; j++)
 	{
-		/* Generate random number */
-		i_Random = rand();
-		//printf("rn = %08X\t", i_Random);
-
-		/* Check number is not same as last one produced */
-		if (i_Random != i_RandomLast)
-		{
-			i_RandomLast = i_Random;
-		}
-		else 
-		{
-			/* Test failed */
-			ret = false;
-			break;
-		}
+		printf("%d, %08X\n", j, pi_Output[j]);
 	}
-
-	return ret;
 }
 
 int main(void)
@@ -118,40 +86,8 @@ int main(void)
 	__TIME__,
 	SystemFrequency);
 		
-	//Test Random number generator
-	tmpTick = HAL_GetTick();
-	bool ret = test_dspRand32();
-	tmpTick = HAL_GetTick() - tmpTick;
-	printf("\ndspRand32:%s\n", ret?"OK":"FAILED");
-	printf("%u\n", tmpTick);
-	
-	#ifdef __USE_ANSI_EXAMPLE_RAND
-	printf("Use ANSI example rand.\n");
-	#else
-	printf("use CLib rand.\n");
-	#endif	
-	tmpTick = HAL_GetTick();
-	ret = test_stdlib_rand();
-	tmpTick = HAL_GetTick() - tmpTick;
-	printf("\nstdlib rand:%s\n", 
-	ret?"OK":"FAILED");
-	printf("%u\n", tmpTick);
-	
-	//Test dot Product
-	//Verification Python Code
-	//a=[1,20,3,40,5,60,7,80,9,100]
-	//b=[1, -1, 1, -1, 1, -1, 1, -1, 1, -1]
-	//prod=0
-	//l = len(a)
-	//for i in range(l):
-	//	prod += a[i]*b[i]
-	//print(prod)
-	
-#define	VECT_LEN	10
-	int32_t testV1[VECT_LEN] = {1,20,3,40,5,60,7,80,9,100};
-	int32_t testV2[VECT_LEN] = {1, -1, 1, -1, 1, -1, 1, -1, 1, -1};
-	int32_t result_dotProduct = asm_dot_prod_32(testV1, testV2, VECT_LEN);
-	printf("dotProduct:%d\n", result_dotProduct);
+	//Test Biquad32
+	vF_dsplib_testbench_biquad32();
 	
  	/* Channel 0 - VS */
 	/* Channel 1 - VDDEXT */
