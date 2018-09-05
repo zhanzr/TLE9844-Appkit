@@ -66,9 +66,26 @@ void vF_dsplib_testbench_biquad32(void)
 
 	vF_dspl_biquad32(pi_Output, pi_Input, &S_StateCoeff, TEST_BIQUAD_SIZE);
 
+	printf("Coeffient:\n");
+	printf("%f %f %f %f %f\n", 
+	S_StateCoeff.pi_Coeff[0]*1.0f/(1<<14),
+	S_StateCoeff.pi_Coeff[1]*1.0f/(1<<14),
+	S_StateCoeff.pi_Coeff[2]*1.0f/(1<<14),
+	S_StateCoeff.pi_Coeff[3]*1.0f/(1<<14),
+	S_StateCoeff.pi_Coeff[4]*1.0f/(1<<14));
+	
+	printf("Input:\n");
 	for(j = 0; j < TEST_BIQUAD_SIZE; j++)
 	{
-		printf("%d, %08X\n", j, pi_Output[j]);
+		printf("%f\n", pi_Input[j]*1.0f/(1<<28));
+//		printf("%08X, %f\n", pi_Input[j], pi_Input[j]*1.0f/(1<<28));
+	}
+	
+	printf("Output:\n");
+	for(j = 0; j < TEST_BIQUAD_SIZE; j++)
+	{
+		printf("%f\n", pi_Output[j]*1.0f/(1<<28));
+//		printf("%08X, %f\n", pi_Output[j], pi_Output[j]*1.0f/(1<<28));
 	}
 }
 
@@ -81,7 +98,7 @@ int main(void)
   /* System timer configuration */
   SysTick_Config(SystemFrequency / 1000);
 	
-  printf("Assembler Demo 5 %08X %s %u\n", 
+  printf("Assembler Demo Biquad %08X %s %u\n", 
 	SCB->CPUID, 
 	__TIME__,
 	SystemFrequency);

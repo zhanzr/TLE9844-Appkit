@@ -119,10 +119,6 @@
       <TargetDriverDllRegistry>
         <SetRegEntry>
           <Number>0</Number>
-          <Key>DLGUARM</Key>
-        </SetRegEntry>
-        <SetRegEntry>
-          <Number>0</Number>
           <Key>UL2CM3</Key>
           <Name>UL2CM3(-S0 -C0 -P0 ) --FF1TLE984x_OPT.FLM  -FN3 -FC1000 -FD18000000 -FF0TLE9844 -FF1TLE9844_EEP -FF2TLE984x_OPT -FL0F000 -FL11000 -FL24 -FS011000000 -FS11100F000 -FS210FFFFFC -FP0($$Device:TLE9844QX$Flash\TLE9844.FLM) -FP1($$Device:TLE9844QX$Flash\TLE9844_EEP.FLM) -FP2($$Device:TLE9844QX$Flash\TLE984x_OPT.FLM)</Name>
         </SetRegEntry>
