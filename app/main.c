@@ -45,66 +45,56 @@ void HAL_Delay(uint32_t t)
 	}  
 }
 
-#define TEST_BIQUAD_SIZE 	64
+#define TEST_BLOCK_FIR_SIZE 	64
+#define NTAPS 		64
 
-//4.28 Q Format
-int32_t pi_Input[TEST_BIQUAD_SIZE];
-int32_t pi_Output[TEST_BIQUAD_SIZE];
+int pi_Input_blockfir[TEST_BLOCK_FIR_SIZE+NTAPS-1];
+int pi_Output_blockfir[TEST_BLOCK_FIR_SIZE];
+int pi_Coeffs[NTAPS];
 
-void vF_dsplib_testbench_biquad32(void)
+void vF_dsplib_testbench_blockfir32(void)
 {
 	int j;
 
-	tS_biquad32_StateCoeff S_StateCoeff =
+	tS_blockfir32_Coeff S_Coeff =
 	{
-		//2.14 Q Format
-		{0x2000, 0, 0x4000, 0, 0},
-		{0, 0}
+		pi_Coeffs,
+		NTAPS
 	};
 
-	pi_Input[0] = 0x10000000;
+	pi_Coeffs[0] = 1;
+	pi_Input_blockfir[0]  = 1;
+	pi_Input_blockfir[32] = 1;
 
-	vF_dspl_biquad32(pi_Output, pi_Input, &S_StateCoeff, TEST_BIQUAD_SIZE);
+	vF_dspl_blockfir32(pi_Output_blockfir, pi_Input_blockfir, &S_Coeff, TEST_BLOCK_FIR_SIZE);
 
-	printf("Coeffient:\n");
-	printf("%f %f %f %f %f\n", 
-	S_StateCoeff.pi_Coeff[0]*1.0f/(1<<14),
-	S_StateCoeff.pi_Coeff[1]*1.0f/(1<<14),
-	S_StateCoeff.pi_Coeff[2]*1.0f/(1<<14),
-	S_StateCoeff.pi_Coeff[3]*1.0f/(1<<14),
-	S_StateCoeff.pi_Coeff[4]*1.0f/(1<<14));
-	
 	printf("Input:\n");
-	for(j = 0; j < TEST_BIQUAD_SIZE; j++)
+	for(j = 0; j < TEST_BLOCK_FIR_SIZE; j++)
 	{
-		printf("%f\n", pi_Input[j]*1.0f/(1<<28));
-//		printf("%08X, %f\n", pi_Input[j], pi_Input[j]*1.0f/(1<<28));
+		printf("%f\n", pi_Input_blockfir[j]*1.0f/(1<<28));
 	}
 	
 	printf("Output:\n");
-	for(j = 0; j < TEST_BIQUAD_SIZE; j++)
+	for(j = 0; j < TEST_BLOCK_FIR_SIZE; j++)
 	{
-		printf("%f\n", pi_Output[j]*1.0f/(1<<28));
-//		printf("%08X, %f\n", pi_Output[j], pi_Output[j]*1.0f/(1<<28));
+		printf("%f\n", pi_Output_blockfir[j]*1.0f/(1<<28));
 	}
 }
 
 int main(void)
-{
-	uint32_t tmpTick;
-	
+{	
   TLE_Init();
 	
   /* System timer configuration */
   SysTick_Config(SystemFrequency / 1000);
 	
-  printf("Assembler Demo Biquad %08X %s %u\n", 
+  printf("Assembler Demo FIR %08X %s %u\n", 
 	SCB->CPUID, 
 	__TIME__,
 	SystemFrequency);
 		
-	//Test Biquad32
-	vF_dsplib_testbench_biquad32();
+	//Test Block Fir32
+	vF_dsplib_testbench_blockfir32();
 	
  	/* Channel 0 - VS */
 	/* Channel 1 - VDDEXT */

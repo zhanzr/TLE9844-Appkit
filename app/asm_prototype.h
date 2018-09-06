@@ -55,4 +55,12 @@ typedef struct
 
 extern void vF_dspl_biquad32(int32_t *pi_Output, int32_t *pi_Input, tS_biquad32_StateCoeff *pS_StateCoeff, int32_t i_NSamples);
 
+typedef struct
+{
+	int32_t *pi_Coeff;
+	int32_t NTaps;
+}tS_blockfir32_Coeff;
+
+extern void vF_dspl_blockfir32(int32_t *pi_y, int32_t *pi_x, tS_blockfir32_Coeff *pS_Coeff, int32_t i_nsamples);
+
 #endif //__ASM_PROTOTYPE_H__

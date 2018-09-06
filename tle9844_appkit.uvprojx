@@ -397,9 +397,9 @@
           <GroupName>asm_src</GroupName>
           <Files>
             <File>
-              <FileName>dspBiquad32.s</FileName>
+              <FileName>dspBlockFir32.s</FileName>
               <FileType>2</FileType>
-              <FilePath>.\app\dspBiquad32.s</FilePath>
+              <FilePath>.\app\dspBlockFir32.s</FilePath>
             </File>
           </Files>
         </Group>

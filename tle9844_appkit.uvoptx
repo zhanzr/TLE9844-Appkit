@@ -119,6 +119,10 @@
       <TargetDriverDllRegistry>
         <SetRegEntry>
           <Number>0</Number>
+          <Key>DLGUARM</Key>
+        </SetRegEntry>
+        <SetRegEntry>
+          <Number>0</Number>
           <Key>UL2CM3</Key>
           <Name>UL2CM3(-S0 -C0 -P0 ) --FF1TLE984x_OPT.FLM  -FN3 -FC1000 -FD18000000 -FF0TLE9844 -FF1TLE9844_EEP -FF2TLE984x_OPT -FL0F000 -FL11000 -FL24 -FS011000000 -FS11100F000 -FS210FFFFFC -FP0($$Device:TLE9844QX$Flash\TLE9844.FLM) -FP1($$Device:TLE9844QX$Flash\TLE9844_EEP.FLM) -FP2($$Device:TLE9844QX$Flash\TLE984x_OPT.FLM)</Name>
         </SetRegEntry>
@@ -147,18 +151,34 @@
         <Bp>
           <Number>0</Number>
           <Type>0</Type>
-          <LineNumber>68</LineNumber>
+          <LineNumber>270</LineNumber>
           <EnabledFlag>1</EnabledFlag>
-          <Address>285213112</Address>
+          <Address>285213340</Address>
           <ByteObject>0</ByteObject>
           <HtxType>0</HtxType>
           <ManyObjects>0</ManyObjects>
           <SizeOfObject>0</SizeOfObject>
           <BreakByAccess>0</BreakByAccess>
           <BreakIfRCount>1</BreakIfRCount>
-          <Filename>.\app\dspBiquad32.s</Filename>
+          <Filename>.\app\dspBlockFir32.s</Filename>
           <ExecCommand></ExecCommand>
-          <Expression>\\tty\app/dspBiquad32.s\68</Expression>
+          <Expression>\\tty\app/dspBlockFir32.s\270</Expression>
+        </Bp>
+        <Bp>
+          <Number>1</Number>
+          <Type>0</Type>
+          <LineNumber>28</LineNumber>
+          <EnabledFlag>1</EnabledFlag>
+          <Address>285213084</Address>
+          <ByteObject>0</ByteObject>
+          <HtxType>0</HtxType>
+          <ManyObjects>0</ManyObjects>
+          <SizeOfObject>0</SizeOfObject>
+          <BreakByAccess>0</BreakByAccess>
+          <BreakIfRCount>1</BreakIfRCount>
+          <Filename>.\app\dspBlockFir32.s</Filename>
+          <ExecCommand></ExecCommand>
+          <Expression>\\tty\app/dspBlockFir32.s\28</Expression>
         </Bp>
       </Breakpoint>
       <MemoryWindow1>
@@ -259,8 +279,8 @@
       <tvExp>0</tvExp>
       <tvExpOptDlg>0</tvExpOptDlg>
       <bDave2>0</bDave2>
-      <PathWithFileName>.\app\dspBiquad32.s</PathWithFileName>
-      <FilenameWithoutPath>dspBiquad32.s</FilenameWithoutPath>
+      <PathWithFileName>.\app\dspBlockFir32.s</PathWithFileName>
+      <FilenameWithoutPath>dspBlockFir32.s</FilenameWithoutPath>
       <RteFlg>0</RteFlg>
       <bShared>0</bShared>
     </File>
