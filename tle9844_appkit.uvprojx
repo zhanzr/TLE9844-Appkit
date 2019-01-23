@@ -527,6 +527,234 @@
       </component>
     </components>
     <files>
+      <file attr="config" category="doc" condition="TLE984x" name="Device\SDK\cfgwiz\script\IFX_TLE984x.xml" version="0.0.0">
+        <instance index="0" removed="1">RTE\Device\TLE9844-2QX\IFX_TLE984x.xml</instance>
+        <component Cclass="Device" Cgroup="ConfigWizard" Cvendor="Infineon" Cversion="1.8.7" condition="TLE984x"/>
+        <package license="Licence\CMSIS_END_USER_LICENCE_AGREEMENT.txt" name="TLE984x_DFP" schemaVersion="1.2" supportContact="http://www.infineon.com/cms/en/corporate/company/contact/support/index.html" url="http://dave.infineon.com/Libraries/CMSIS_PACK/" vendor="Infineon" version="1.1.1"/>
+        <targetInfos/>
+      </file>
+      <file attr="config" category="source" name="Device\SDK\src\adc1.c" version="0.0.0">
+        <instance index="0" removed="1">RTE\Device\TLE9844-2QX\adc1.c</instance>
+        <component Cclass="Device" Cgroup="SDK" Csub="ADC1" Cvendor="Infineon" Cversion="0.1.7" condition="TLE984x CMSIS Device"/>
+        <package license="Licence\CMSIS_END_USER_LICENCE_AGREEMENT.txt" name="TLE984x_DFP" schemaVersion="1.2" supportContact="http://www.infineon.com/cms/en/corporate/company/contact/support/index.html" url="http://dave.infineon.com/Libraries/CMSIS_PACK/" vendor="Infineon" version="1.1.1"/>
+        <targetInfos/>
+      </file>
+      <file attr="config" category="header" name="Device\SDK\inc\adc1.h" version="0.0.0">
+        <instance index="0" removed="1">RTE\Device\TLE9844-2QX\adc1.h</instance>
+        <component Cclass="Device" Cgroup="SDK" Csub="ADC1" Cvendor="Infineon" Cversion="0.1.7" condition="TLE984x CMSIS Device"/>
+        <package license="Licence\CMSIS_END_USER_LICENCE_AGREEMENT.txt" name="TLE984x_DFP" schemaVersion="1.2" supportContact="http://www.infineon.com/cms/en/corporate/company/contact/support/index.html" url="http://dave.infineon.com/Libraries/CMSIS_PACK/" vendor="Infineon" version="1.1.1"/>
+        <targetInfos/>
+      </file>
+      <file attr="config" category="header" condition="TLE9844-2QX" name="Device\SDK\cfgwiz\TLE9844-2QX\adc1_defines.h" version="0.0.0">
+        <instance index="0" removed="1">RTE\Device\TLE9844-2QX\adc1_defines.h</instance>
+        <component Cclass="Device" Cgroup="SDK" Csub="ADC1" Cvendor="Infineon" Cversion="0.1.7" condition="TLE984x CMSIS Device"/>
+        <package license="Licence\CMSIS_END_USER_LICENCE_AGREEMENT.txt" name="TLE984x_DFP" schemaVersion="1.2" supportContact="http://www.infineon.com/cms/en/corporate/company/contact/support/index.html" url="http://dave.infineon.com/Libraries/CMSIS_PACK/" vendor="Infineon" version="1.1.1"/>
+        <targetInfos/>
+      </file>
+      <file attr="config" category="source" name="Device\SDK\src\adc2.c" version="0.0.0">
+        <instance index="0" removed="1">RTE\Device\TLE9844-2QX\adc2.c</instance>
+        <component Cclass="Device" Cgroup="SDK" Csub="ADC2" Cvendor="Infineon" Cversion="0.1.6" condition="TLE984x CMSIS Device"/>
+        <package license="Licence\CMSIS_END_USER_LICENCE_AGREEMENT.txt" name="TLE984x_DFP" schemaVersion="1.2" supportContact="http://www.infineon.com/cms/en/corporate/company/contact/support/index.html" url="http://dave.infineon.com/Libraries/CMSIS_PACK/" vendor="Infineon" version="1.1.1"/>
+        <targetInfos/>
+      </file>
+      <file attr="config" category="header" name="Device\SDK\inc\adc2.h" version="0.0.0">
+        <instance index="0" removed="1">RTE\Device\TLE9844-2QX\adc2.h</instance>
+        <component Cclass="Device" Cgroup="SDK" Csub="ADC2" Cvendor="Infineon" Cversion="0.1.6" condition="TLE984x CMSIS Device"/>
+        <package license="Licence\CMSIS_END_USER_LICENCE_AGREEMENT.txt" name="TLE984x_DFP" schemaVersion="1.2" supportContact="http://www.infineon.com/cms/en/corporate/company/contact/support/index.html" url="http://dave.infineon.com/Libraries/CMSIS_PACK/" vendor="Infineon" version="1.1.1"/>
+        <targetInfos/>
+      </file>
+      <file attr="config" category="header" condition="TLE9844-2QX" name="Device\SDK\cfgwiz\TLE9844-2QX\adc2_defines.h" version="0.0.0">
+        <instance index="0" removed="1">RTE\Device\TLE9844-2QX\adc2_defines.h</instance>
+        <component Cclass="Device" Cgroup="SDK" Csub="ADC2" Cvendor="Infineon" Cversion="0.1.6" condition="TLE984x CMSIS Device"/>
+        <package license="Licence\CMSIS_END_USER_LICENCE_AGREEMENT.txt" name="TLE984x_DFP" schemaVersion="1.2" supportContact="http://www.infineon.com/cms/en/corporate/company/contact/support/index.html" url="http://dave.infineon.com/Libraries/CMSIS_PACK/" vendor="Infineon" version="1.1.1"/>
+        <targetInfos/>
+      </file>
+      <file attr="config" category="source" name="Device\SDK\src\bootrom.c" version="0.0.0">
+        <instance index="0" removed="1">RTE\Device\TLE9844-2QX\bootrom.c</instance>
+        <component Cclass="Device" Cgroup="SDK" Csub="BOOTROM" Cvendor="Infineon" Cversion="1.5.0" condition="TLE984x CMSIS Device"/>
+        <package license="Licence\CMSIS_END_USER_LICENCE_AGREEMENT.txt" name="TLE984x_DFP" schemaVersion="1.2" supportContact="http://www.infineon.com/cms/en/corporate/company/contact/support/index.html" url="http://dave.infineon.com/Libraries/CMSIS_PACK/" vendor="Infineon" version="1.1.1"/>
+        <targetInfos/>
+      </file>
+      <file attr="config" category="header" name="Device\SDK\inc\bootrom.h" version="0.0.0">
+        <instance index="0" removed="1">RTE\Device\TLE9844-2QX\bootrom.h</instance>
+        <component Cclass="Device" Cgroup="SDK" Csub="BOOTROM" Cvendor="Infineon" Cversion="1.5.0" condition="TLE984x CMSIS Device"/>
+        <package license="Licence\CMSIS_END_USER_LICENCE_AGREEMENT.txt" name="TLE984x_DFP" schemaVersion="1.2" supportContact="http://www.infineon.com/cms/en/corporate/company/contact/support/index.html" url="http://dave.infineon.com/Libraries/CMSIS_PACK/" vendor="Infineon" version="1.1.1"/>
+        <targetInfos/>
+      </file>
+      <file attr="config" category="header" condition="TLE9844-2QX" name="Device\SDK\cfgwiz\TLE9844-2QX\bsl_defines.h" version="0.0.0">
+        <instance index="0" removed="1">RTE\Device\TLE9844-2QX\bsl_defines.h</instance>
+        <component Cclass="Device" Cgroup="Startup" Cvendor="Infineon" Cversion="1.0.1" condition="TLE984x CMSIS Device"/>
+        <package license="Licence\CMSIS_END_USER_LICENCE_AGREEMENT.txt" name="TLE984x_DFP" schemaVersion="1.2" supportContact="http://www.infineon.com/cms/en/corporate/company/contact/support/index.html" url="http://dave.infineon.com/Libraries/CMSIS_PACK/" vendor="Infineon" version="1.1.1"/>
+        <targetInfos/>
+      </file>
+      <file attr="config" category="doc" condition="TLE9844-2QX" name="Device\SDK\cfgwiz\TLE9844-2QX\config.icwp" version="0.0.0">
+        <instance index="0" removed="1">RTE\Device\TLE9844-2QX\config.icwp</instance>
+        <component Cclass="Device" Cgroup="ConfigWizard" Cvendor="Infineon" Cversion="1.8.7" condition="TLE984x"/>
+        <package license="Licence\CMSIS_END_USER_LICENCE_AGREEMENT.txt" name="TLE984x_DFP" schemaVersion="1.2" supportContact="http://www.infineon.com/cms/en/corporate/company/contact/support/index.html" url="http://dave.infineon.com/Libraries/CMSIS_PACK/" vendor="Infineon" version="1.1.1"/>
+        <targetInfos/>
+      </file>
+      <file attr="config" category="source" name="Device\SDK\src\int.c" version="0.0.0">
+        <instance index="0" removed="1">RTE\Device\TLE9844-2QX\int.c</instance>
+        <component Cclass="Device" Cgroup="SDK" Csub="INT" Cvendor="Infineon" Cversion="0.1.4" condition="TLE984x CMSIS Device"/>
+        <package license="Licence\CMSIS_END_USER_LICENCE_AGREEMENT.txt" name="TLE984x_DFP" schemaVersion="1.2" supportContact="http://www.infineon.com/cms/en/corporate/company/contact/support/index.html" url="http://dave.infineon.com/Libraries/CMSIS_PACK/" vendor="Infineon" version="1.1.1"/>
+        <targetInfos/>
+      </file>
+      <file attr="config" category="header" name="Device\SDK\inc\int.h" version="0.0.0">
+        <instance index="0" removed="1">RTE\Device\TLE9844-2QX\int.h</instance>
+        <component Cclass="Device" Cgroup="SDK" Csub="INT" Cvendor="Infineon" Cversion="0.1.4" condition="TLE984x CMSIS Device"/>
+        <package license="Licence\CMSIS_END_USER_LICENCE_AGREEMENT.txt" name="TLE984x_DFP" schemaVersion="1.2" supportContact="http://www.infineon.com/cms/en/corporate/company/contact/support/index.html" url="http://dave.infineon.com/Libraries/CMSIS_PACK/" vendor="Infineon" version="1.1.1"/>
+        <targetInfos/>
+      </file>
+      <file attr="config" category="header" condition="TLE9844-2QX" name="Device\SDK\cfgwiz\TLE9844-2QX\int_defines.h" version="0.0.0">
+        <instance index="0" removed="1">RTE\Device\TLE9844-2QX\int_defines.h</instance>
+        <component Cclass="Device" Cgroup="SDK" Csub="INT" Cvendor="Infineon" Cversion="0.1.4" condition="TLE984x CMSIS Device"/>
+        <package license="Licence\CMSIS_END_USER_LICENCE_AGREEMENT.txt" name="TLE984x_DFP" schemaVersion="1.2" supportContact="http://www.infineon.com/cms/en/corporate/company/contact/support/index.html" url="http://dave.infineon.com/Libraries/CMSIS_PACK/" vendor="Infineon" version="1.1.1"/>
+        <targetInfos/>
+      </file>
+      <file attr="config" category="source" name="Device\SDK\src\isr.c" version="0.0.0">
+        <instance index="0" removed="1">RTE\Device\TLE9844-2QX\isr.c</instance>
+        <component Cclass="Device" Cgroup="SDK" Csub="ISR" Cvendor="Infineon" Cversion="0.1.8" condition="TLE984x CMSIS Device"/>
+        <package license="Licence\CMSIS_END_USER_LICENCE_AGREEMENT.txt" name="TLE984x_DFP" schemaVersion="1.2" supportContact="http://www.infineon.com/cms/en/corporate/company/contact/support/index.html" url="http://dave.infineon.com/Libraries/CMSIS_PACK/" vendor="Infineon" version="1.1.1"/>
+        <targetInfos/>
+      </file>
+      <file attr="config" category="header" name="Device\SDK\inc\isr.h" version="0.0.0">
+        <instance index="0" removed="1">RTE\Device\TLE9844-2QX\isr.h</instance>
+        <component Cclass="Device" Cgroup="SDK" Csub="ISR" Cvendor="Infineon" Cversion="0.1.8" condition="TLE984x CMSIS Device"/>
+        <package license="Licence\CMSIS_END_USER_LICENCE_AGREEMENT.txt" name="TLE984x_DFP" schemaVersion="1.2" supportContact="http://www.infineon.com/cms/en/corporate/company/contact/support/index.html" url="http://dave.infineon.com/Libraries/CMSIS_PACK/" vendor="Infineon" version="1.1.1"/>
+        <targetInfos/>
+      </file>
+      <file attr="config" category="header" condition="TLE9844-2QX" name="Device\SDK\cfgwiz\TLE9844-2QX\isr_defines.h" version="0.0.0">
+        <instance index="0" removed="1">RTE\Device\TLE9844-2QX\isr_defines.h</instance>
+        <component Cclass="Device" Cgroup="SDK" Csub="ISR" Cvendor="Infineon" Cversion="0.1.8" condition="TLE984x CMSIS Device"/>
+        <package license="Licence\CMSIS_END_USER_LICENCE_AGREEMENT.txt" name="TLE984x_DFP" schemaVersion="1.2" supportContact="http://www.infineon.com/cms/en/corporate/company/contact/support/index.html" url="http://dave.infineon.com/Libraries/CMSIS_PACK/" vendor="Infineon" version="1.1.1"/>
+        <targetInfos/>
+      </file>
+      <file attr="config" category="source" name="Device\SDK\src\ls.c" version="0.0.0">
+        <instance index="0" removed="1">RTE\Device\TLE9844-2QX\ls.c</instance>
+        <component Cclass="Device" Cgroup="SDK" Csub="LS" Cvendor="Infineon" Cversion="0.1.4" condition="TLE984x CMSIS Device"/>
+        <package license="Licence\CMSIS_END_USER_LICENCE_AGREEMENT.txt" name="TLE984x_DFP" schemaVersion="1.2" supportContact="http://www.infineon.com/cms/en/corporate/company/contact/support/index.html" url="http://dave.infineon.com/Libraries/CMSIS_PACK/" vendor="Infineon" version="1.1.1"/>
+        <targetInfos/>
+      </file>
+      <file attr="config" category="header" name="Device\SDK\inc\ls.h" version="0.0.0">
+        <instance index="0" removed="1">RTE\Device\TLE9844-2QX\ls.h</instance>
+        <component Cclass="Device" Cgroup="SDK" Csub="LS" Cvendor="Infineon" Cversion="0.1.4" condition="TLE984x CMSIS Device"/>
+        <package license="Licence\CMSIS_END_USER_LICENCE_AGREEMENT.txt" name="TLE984x_DFP" schemaVersion="1.2" supportContact="http://www.infineon.com/cms/en/corporate/company/contact/support/index.html" url="http://dave.infineon.com/Libraries/CMSIS_PACK/" vendor="Infineon" version="1.1.1"/>
+        <targetInfos/>
+      </file>
+      <file attr="config" category="header" condition="TLE9844-2QX" name="Device\SDK\cfgwiz\TLE9844-2QX\ls_defines.h" version="0.0.0">
+        <instance index="0" removed="1">RTE\Device\TLE9844-2QX\ls_defines.h</instance>
+        <component Cclass="Device" Cgroup="SDK" Csub="LS" Cvendor="Infineon" Cversion="0.1.4" condition="TLE984x CMSIS Device"/>
+        <package license="Licence\CMSIS_END_USER_LICENCE_AGREEMENT.txt" name="TLE984x_DFP" schemaVersion="1.2" supportContact="http://www.infineon.com/cms/en/corporate/company/contact/support/index.html" url="http://dave.infineon.com/Libraries/CMSIS_PACK/" vendor="Infineon" version="1.1.1"/>
+        <targetInfos/>
+      </file>
+      <file attr="config" category="source" name="Device\SDK\src\port.c" version="0.0.0">
+        <instance index="0" removed="1">RTE\Device\TLE9844-2QX\port.c</instance>
+        <component Cclass="Device" Cgroup="SDK" Csub="PORT" Cvendor="Infineon" Cversion="0.6.0" condition="TLE984x CMSIS Device"/>
+        <package license="Licence\CMSIS_END_USER_LICENCE_AGREEMENT.txt" name="TLE984x_DFP" schemaVersion="1.2" supportContact="http://www.infineon.com/cms/en/corporate/company/contact/support/index.html" url="http://dave.infineon.com/Libraries/CMSIS_PACK/" vendor="Infineon" version="1.1.1"/>
+        <targetInfos/>
+      </file>
+      <file attr="config" category="header" name="Device\SDK\inc\port.h" version="0.0.0">
+        <instance index="0" removed="1">RTE\Device\TLE9844-2QX\port.h</instance>
+        <component Cclass="Device" Cgroup="SDK" Csub="PORT" Cvendor="Infineon" Cversion="0.6.0" condition="TLE984x CMSIS Device"/>
+        <package license="Licence\CMSIS_END_USER_LICENCE_AGREEMENT.txt" name="TLE984x_DFP" schemaVersion="1.2" supportContact="http://www.infineon.com/cms/en/corporate/company/contact/support/index.html" url="http://dave.infineon.com/Libraries/CMSIS_PACK/" vendor="Infineon" version="1.1.1"/>
+        <targetInfos/>
+      </file>
+      <file attr="config" category="header" condition="TLE9844-2QX" name="Device\SDK\cfgwiz\TLE9844-2QX\port_defines.h" version="0.0.0">
+        <instance index="0" removed="1">RTE\Device\TLE9844-2QX\port_defines.h</instance>
+        <component Cclass="Device" Cgroup="SDK" Csub="PORT" Cvendor="Infineon" Cversion="0.6.0" condition="TLE984x CMSIS Device"/>
+        <package license="Licence\CMSIS_END_USER_LICENCE_AGREEMENT.txt" name="TLE984x_DFP" schemaVersion="1.2" supportContact="http://www.infineon.com/cms/en/corporate/company/contact/support/index.html" url="http://dave.infineon.com/Libraries/CMSIS_PACK/" vendor="Infineon" version="1.1.1"/>
+        <targetInfos/>
+      </file>
+      <file attr="config" category="source" name="Device\SDK\src\scu.c" version="0.0.0">
+        <instance index="0" removed="1">RTE\Device\TLE9844-2QX\scu.c</instance>
+        <component Cclass="Device" Cgroup="SDK" Csub="SCU" Cvendor="Infineon" Cversion="0.3.2" condition="TLE984x CMSIS Device"/>
+        <package license="Licence\CMSIS_END_USER_LICENCE_AGREEMENT.txt" name="TLE984x_DFP" schemaVersion="1.2" supportContact="http://www.infineon.com/cms/en/corporate/company/contact/support/index.html" url="http://dave.infineon.com/Libraries/CMSIS_PACK/" vendor="Infineon" version="1.1.1"/>
+        <targetInfos/>
+      </file>
+      <file attr="config" category="header" name="Device\SDK\inc\scu.h" version="0.0.0">
+        <instance index="0" removed="1">RTE\Device\TLE9844-2QX\scu.h</instance>
+        <component Cclass="Device" Cgroup="SDK" Csub="SCU" Cvendor="Infineon" Cversion="0.3.2" condition="TLE984x CMSIS Device"/>
+        <package license="Licence\CMSIS_END_USER_LICENCE_AGREEMENT.txt" name="TLE984x_DFP" schemaVersion="1.2" supportContact="http://www.infineon.com/cms/en/corporate/company/contact/support/index.html" url="http://dave.infineon.com/Libraries/CMSIS_PACK/" vendor="Infineon" version="1.1.1"/>
+        <targetInfos/>
+      </file>
+      <file attr="config" category="header" condition="TLE9844-2QX" name="Device\SDK\cfgwiz\TLE9844-2QX\scu_defines.h" version="0.0.0">
+        <instance index="0" removed="1">RTE\Device\TLE9844-2QX\scu_defines.h</instance>
+        <component Cclass="Device" Cgroup="SDK" Csub="SCU" Cvendor="Infineon" Cversion="0.3.2" condition="TLE984x CMSIS Device"/>
+        <package license="Licence\CMSIS_END_USER_LICENCE_AGREEMENT.txt" name="TLE984x_DFP" schemaVersion="1.2" supportContact="http://www.infineon.com/cms/en/corporate/company/contact/support/index.html" url="http://dave.infineon.com/Libraries/CMSIS_PACK/" vendor="Infineon" version="1.1.1"/>
+        <targetInfos/>
+      </file>
+      <file attr="config" category="source" condition="TLE984x" name="Device\Source\ARM\startup_tle984x.s" version="0.0.0">
+        <instance index="0" removed="1">RTE\Device\TLE9844-2QX\startup_tle984x.s</instance>
+        <component Cclass="Device" Cgroup="Startup" Cvendor="Infineon" Cversion="1.0.1" condition="TLE984x CMSIS Device"/>
+        <package license="Licence\CMSIS_END_USER_LICENCE_AGREEMENT.txt" name="TLE984x_DFP" schemaVersion="1.2" supportContact="http://www.infineon.com/cms/en/corporate/company/contact/support/index.html" url="http://dave.infineon.com/Libraries/CMSIS_PACK/" vendor="Infineon" version="1.1.1"/>
+        <targetInfos/>
+      </file>
+      <file attr="config" category="source" condition="TLE984x" name="Device\Source\system_tle984x.c" version="0.0.0">
+        <instance index="0" removed="1">RTE\Device\TLE9844-2QX\system_tle984x.c</instance>
+        <component Cclass="Device" Cgroup="Startup" Cvendor="Infineon" Cversion="1.0.1" condition="TLE984x CMSIS Device"/>
+        <package license="Licence\CMSIS_END_USER_LICENCE_AGREEMENT.txt" name="TLE984x_DFP" schemaVersion="1.2" supportContact="http://www.infineon.com/cms/en/corporate/company/contact/support/index.html" url="http://dave.infineon.com/Libraries/CMSIS_PACK/" vendor="Infineon" version="1.1.1"/>
+        <targetInfos/>
+      </file>
+      <file attr="config" category="header" condition="TLE984x" name="Device\Include\system_tle984x.h" version="0.0.0">
+        <instance index="0" removed="1">RTE\Device\TLE9844-2QX\system_tle984x.h</instance>
+        <component Cclass="Device" Cgroup="Startup" Cvendor="Infineon" Cversion="1.0.1" condition="TLE984x CMSIS Device"/>
+        <package license="Licence\CMSIS_END_USER_LICENCE_AGREEMENT.txt" name="TLE984x_DFP" schemaVersion="1.2" supportContact="http://www.infineon.com/cms/en/corporate/company/contact/support/index.html" url="http://dave.infineon.com/Libraries/CMSIS_PACK/" vendor="Infineon" version="1.1.1"/>
+        <targetInfos/>
+      </file>
+      <file attr="config" category="header" condition="TLE984x" name="Device\Include\tle984x.h" version="0.0.0">
+        <instance index="0" removed="1">RTE\Device\TLE9844-2QX\tle984x.h</instance>
+        <component Cclass="Device" Cgroup="Startup" Cvendor="Infineon" Cversion="1.0.1" condition="TLE984x CMSIS Device"/>
+        <package license="Licence\CMSIS_END_USER_LICENCE_AGREEMENT.txt" name="TLE984x_DFP" schemaVersion="1.2" supportContact="http://www.infineon.com/cms/en/corporate/company/contact/support/index.html" url="http://dave.infineon.com/Libraries/CMSIS_PACK/" vendor="Infineon" version="1.1.1"/>
+        <targetInfos/>
+      </file>
+      <file attr="config" category="source" condition="TLE984x" name="Device\Source\tle_device.c" version="0.0.0">
+        <instance index="0" removed="1">RTE\Device\TLE9844-2QX\tle_device.c</instance>
+        <component Cclass="Device" Cgroup="Startup" Cvendor="Infineon" Cversion="1.0.1" condition="TLE984x CMSIS Device"/>
+        <package license="Licence\CMSIS_END_USER_LICENCE_AGREEMENT.txt" name="TLE984x_DFP" schemaVersion="1.2" supportContact="http://www.infineon.com/cms/en/corporate/company/contact/support/index.html" url="http://dave.infineon.com/Libraries/CMSIS_PACK/" vendor="Infineon" version="1.1.1"/>
+        <targetInfos/>
+      </file>
+      <file attr="config" category="header" condition="TLE984x" name="Device\Include\tle_device.h" version="0.0.0">
+        <instance index="0" removed="1">RTE\Device\TLE9844-2QX\tle_device.h</instance>
+        <component Cclass="Device" Cgroup="Startup" Cvendor="Infineon" Cversion="1.0.1" condition="TLE984x CMSIS Device"/>
+        <package license="Licence\CMSIS_END_USER_LICENCE_AGREEMENT.txt" name="TLE984x_DFP" schemaVersion="1.2" supportContact="http://www.infineon.com/cms/en/corporate/company/contact/support/index.html" url="http://dave.infineon.com/Libraries/CMSIS_PACK/" vendor="Infineon" version="1.1.1"/>
+        <targetInfos/>
+      </file>
+      <file attr="config" category="header" condition="TLE984x" name="Device\Include\types.h" version="0.0.0">
+        <instance index="0" removed="1">RTE\Device\TLE9844-2QX\types.h</instance>
+        <component Cclass="Device" Cgroup="Startup" Cvendor="Infineon" Cversion="1.0.1" condition="TLE984x CMSIS Device"/>
+        <package license="Licence\CMSIS_END_USER_LICENCE_AGREEMENT.txt" name="TLE984x_DFP" schemaVersion="1.2" supportContact="http://www.infineon.com/cms/en/corporate/company/contact/support/index.html" url="http://dave.infineon.com/Libraries/CMSIS_PACK/" vendor="Infineon" version="1.1.1"/>
+        <targetInfos/>
+      </file>
+      <file attr="config" category="source" name="Device\SDK\src\uart.c" version="0.0.0">
+        <instance index="0" removed="1">RTE\Device\TLE9844-2QX\uart.c</instance>
+        <component Cclass="Device" Cgroup="SDK" Csub="UART" Cvendor="Infineon" Cversion="0.1.4" condition="TLE984x CMSIS Device"/>
+        <package license="Licence\CMSIS_END_USER_LICENCE_AGREEMENT.txt" name="TLE984x_DFP" schemaVersion="1.2" supportContact="http://www.infineon.com/cms/en/corporate/company/contact/support/index.html" url="http://dave.infineon.com/Libraries/CMSIS_PACK/" vendor="Infineon" version="1.1.1"/>
+        <targetInfos/>
+      </file>
+      <file attr="config" category="header" name="Device\SDK\inc\uart.h" version="0.0.0">
+        <instance index="0" removed="1">RTE\Device\TLE9844-2QX\uart.h</instance>
+        <component Cclass="Device" Cgroup="SDK" Csub="UART" Cvendor="Infineon" Cversion="0.1.4" condition="TLE984x CMSIS Device"/>
+        <package license="Licence\CMSIS_END_USER_LICENCE_AGREEMENT.txt" name="TLE984x_DFP" schemaVersion="1.2" supportContact="http://www.infineon.com/cms/en/corporate/company/contact/support/index.html" url="http://dave.infineon.com/Libraries/CMSIS_PACK/" vendor="Infineon" version="1.1.1"/>
+        <targetInfos/>
+      </file>
+      <file attr="config" category="header" condition="TLE9844-2QX" name="Device\SDK\cfgwiz\TLE9844-2QX\uart_defines.h" version="0.0.0">
+        <instance index="0" removed="1">RTE\Device\TLE9844-2QX\uart_defines.h</instance>
+        <component Cclass="Device" Cgroup="SDK" Csub="UART" Cvendor="Infineon" Cversion="0.1.4" condition="TLE984x CMSIS Device"/>
+        <package license="Licence\CMSIS_END_USER_LICENCE_AGREEMENT.txt" name="TLE984x_DFP" schemaVersion="1.2" supportContact="http://www.infineon.com/cms/en/corporate/company/contact/support/index.html" url="http://dave.infineon.com/Libraries/CMSIS_PACK/" vendor="Infineon" version="1.1.1"/>
+        <targetInfos/>
+      </file>
+      <file attr="config" category="source" name="Device\SDK\src\wdt1.c" version="0.0.0">
+        <instance index="0" removed="1">RTE\Device\TLE9844-2QX\wdt1.c</instance>
+        <component Cclass="Device" Cgroup="SDK" Csub="WDT1" Cvendor="Infineon" Cversion="0.2.5" condition="TLE984x CMSIS Device"/>
+        <package license="Licence\CMSIS_END_USER_LICENCE_AGREEMENT.txt" name="TLE984x_DFP" schemaVersion="1.2" supportContact="http://www.infineon.com/cms/en/corporate/company/contact/support/index.html" url="http://dave.infineon.com/Libraries/CMSIS_PACK/" vendor="Infineon" version="1.1.1"/>
+        <targetInfos/>
+      </file>
+      <file attr="config" category="header" name="Device\SDK\inc\wdt1.h" version="0.0.0">
+        <instance index="0" removed="1">RTE\Device\TLE9844-2QX\wdt1.h</instance>
+        <component Cclass="Device" Cgroup="SDK" Csub="WDT1" Cvendor="Infineon" Cversion="0.2.5" condition="TLE984x CMSIS Device"/>
+        <package license="Licence\CMSIS_END_USER_LICENCE_AGREEMENT.txt" name="TLE984x_DFP" schemaVersion="1.2" supportContact="http://www.infineon.com/cms/en/corporate/company/contact/support/index.html" url="http://dave.infineon.com/Libraries/CMSIS_PACK/" vendor="Infineon" version="1.1.1"/>
+        <targetInfos/>
+      </file>
       <file attr="config" category="doc" condition="TLE984x" name="Device\SDK\cfgwiz\script\IFX_TLE984x.xml" version="1.2.1">
         <instance index="0">RTE\Device\TLE9844QX\IFX_TLE984x.xml</instance>
         <component Cclass="Device" Cgroup="ConfigWizard" Cvendor="Infineon" Cversion="1.8.7" condition="TLE984x"/>

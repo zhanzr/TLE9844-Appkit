@@ -92,5 +92,6 @@ int main(void)
   for (;;)
   {		
 		__WFI();
+		(void)WDT1_Service();			
   }
 }
